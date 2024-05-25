@@ -112,8 +112,7 @@
                                 <?php the_content(); ?>
                             </div>                             
                             <div class="testimonial-info"> 
-                                <h4 class="testimonial-name"><?php the_title(); ?></h4>
-                                <a href="#" class="testimonial-web-link large-content-text"><?php echo get_field( 'website_url' ); ?></a> 
+                                <h4 class="testimonial-name"><?php the_title(); ?></h4><a href="#" class="testimonial-web-link large-content-text"><?php echo get_field( 'website_url' ); ?></a> 
                             </div>                             
                         </div>                         
                     </div>
@@ -129,8 +128,7 @@
     <section class="contact-us-before-footer py-120 border-y border-#F2F2F2"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <div class="contact-us-before-footer-col contact-us-before-footer-col flex flex-wrap justify-center"> 
-                <h3 class="large-inner-heading text-center">  <?php _e( 'let’s create remarkable experience for your business', 'mage_hd_theme' ); ?> </h3>
-                <a href="/contact-us/" class="bg-blue-btn view-all-btn"> <span><?php _e( 'Contact us', 'mage_hd_theme' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
+                <h3 class="large-inner-heading text-center">  <?php _e( 'let’s create remarkable experience for your business', 'mage_hd_theme' ); ?> </h3><a href="/contact-us/" class="bg-blue-btn view-all-btn"> <span><?php _e( 'Contact us', 'mage_hd_theme' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
             </div>             
         </div>         
     </section>    

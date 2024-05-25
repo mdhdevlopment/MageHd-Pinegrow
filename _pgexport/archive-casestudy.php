@@ -4,10 +4,10 @@
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
             <div class="w-10/12"> 
-                <div class="hero-title" style="font-family: 'Audiowide', sans-serif; color: #3B65AF; font-weight: 400; font-size: 70px; line-height: 100px; text-transform: uppercase;"> 
-                    <?php _e( 'our case studies', 'mage_hd_theme' ); ?> 
+                <div class="hero-title"> 
+                    <?php _e( 'our case studies', 'mage_hd_theme' ); ?>
                 </div>                     
-                <div class="hero-content mb-5" style="font-family: 'Questrial', sans-serif; font-size: 26px; font-weight: 500; padding-top: 40px; padding-bottom: 40px; line-height: 36px; color: #F2F2F2;"> 
+                <div class="hero-content mb-5"> 
                     <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'mage_hd_theme' ); ?> 
                 </div>                     
             </div>                 
@@ -20,13 +20,13 @@
         <h3 class="large-inner-heading text-center"><?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?></h3> 
         <div class="blog-category uiux-category"> 
             <button class="border-btn uiux-btn active" id="all"> 
-                <?php _e( 'All', 'mage_hd_theme' ); ?> 
+                <?php _e( 'All', 'mage_hd_theme' ); ?>
             </button>                 
             <button class="border-btn uiux-btn" id="case_study_category-website-project"> 
                 <?php _e( 'Website Project', 'mage_hd_theme' ); ?> 
             </button>                 
             <button class="border-btn uiux-btn" id="case_study_category-mobile-app-project"> 
-                <?php _e( 'Mobile App Project', 'mage_hd_theme' ); ?> 
+                <?php _e( 'Mobile App Project', 'mage_hd_theme' ); ?>
             </button>                 
         </div>             
         <div class="project-main-wrapper flex flex-wrap justify-between gap-5"> 
@@ -71,7 +71,7 @@
             <div class="sm:w-12/12 md:w-6/12 case-study-info"> 
                 <h3 class="case-sr-no"><?php _e( '01', 'mage_hd_theme' ); ?></h3> 
                 <div class="large-inner-heading pb-5  case-study-title"> 
-                    <?php _e( 'DIGITAL MARKETING SERVICES', 'mage_hd_theme' ); ?> 
+                    <?php _e( 'DIGITAL MARKETING SERVICES', 'mage_hd_theme' ); ?>
                 </div>                     <a href="/category/digital-marketing/" class="border-btn"><?php _e( 'Explore', 'mage_hd_theme' ); ?></a> 
             </div>                 
             <div class="sm:w-12/12 md:w-6/12 case-study-info"> 

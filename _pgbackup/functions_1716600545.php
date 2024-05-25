@@ -140,6 +140,10 @@ function mage_hd_theme_customize_register( $wp_customize ) {
 
     /* Pinegrow generated Customizer Controls Begin */
 
+    $wp_customize->add_section( 'social_link', array(
+        'title' => __( 'Social Link', 'mage_hd_theme' )
+    ));
+
     $wp_customize->add_section( 'contact_info', array(
         'title' => __( 'Contact Infromation', 'mage_hd_theme' )
     ));
@@ -147,47 +151,7 @@ function mage_hd_theme_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'social_link', array(
         'title' => __( 'Social Link', 'mage_hd_theme' )
     ));
-
-    $wp_customize->add_section( 'social_link', array(
-        'title' => __( 'Social Link', 'mage_hd_theme' )
-    ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
-
-    $wp_customize->add_setting( 'contact_info_location', array(
-        'type' => 'theme_mod',
-        'default' => __( '610 E Zack St. Ste 110-2177Tampa, FL 33602', 'mage_hd_theme' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'contact_info_location', array(
-        'label' => __( 'Location', 'mage_hd_theme' ),
-        'type' => 'text',
-        'section' => 'contact_info'
-    ));
-
-    $wp_customize->add_setting( 'contact_info_phone', array(
-        'type' => 'theme_mod',
-        'default' => __( '800-344-5345', 'mage_hd_theme' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'contact_info_phone', array(
-        'label' => __( 'Contact No', 'mage_hd_theme' ),
-        'type' => 'textarea',
-        'section' => 'contact_info'
-    ));
-
-    $wp_customize->add_setting( 'contact_info_email', array(
-        'type' => 'theme_mod',
-        'default' => __( 'hello@magehd.com', 'mage_hd_theme' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'contact_info_email', array(
-        'label' => __( 'Email', 'mage_hd_theme' ),
-        'type' => 'textarea',
-        'section' => 'contact_info'
-    ));
 
     $wp_customize->add_setting( 'facebook', array(
         'type' => 'theme_mod',
@@ -231,6 +195,42 @@ function mage_hd_theme_customize_register( $wp_customize ) {
         'label' => __( 'Instagram', 'mage_hd_theme' ),
         'type' => 'url',
         'section' => 'social_link'
+    ));
+
+    $wp_customize->add_setting( 'contact_info_location', array(
+        'type' => 'theme_mod',
+        'default' => __( '610 E Zack St. Ste 110-2177Tampa, FL 33602', 'mage_hd_theme' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'contact_info_location', array(
+        'label' => __( 'Location', 'mage_hd_theme' ),
+        'type' => 'text',
+        'section' => 'contact_info'
+    ));
+
+    $wp_customize->add_setting( 'contact_info_phone', array(
+        'type' => 'theme_mod',
+        'default' => __( '800-344-5345', 'mage_hd_theme' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'contact_info_phone', array(
+        'label' => __( 'Contact No', 'mage_hd_theme' ),
+        'type' => 'textarea',
+        'section' => 'contact_info'
+    ));
+
+    $wp_customize->add_setting( 'contact_info_email', array(
+        'type' => 'theme_mod',
+        'default' => __( 'hello@magehd.com', 'mage_hd_theme' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'contact_info_email', array(
+        'label' => __( 'Email', 'mage_hd_theme' ),
+        'type' => 'textarea',
+        'section' => 'contact_info'
     ));
 
     /* Pinegrow generated Customizer Controls End */

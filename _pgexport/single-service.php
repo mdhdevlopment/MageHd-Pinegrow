@@ -3,8 +3,8 @@
 <section class="hero-banner py-120" style="position: relative; padding: 60px 0;"> 
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex flex-col"> 
-            <h1 class="hero-title" style="font-family: 'Audiowide', sans-serif; color: #3B65AF; font-weight: 400; font-size: 70px; line-height: 100px; text-transform: uppercase;"><?php the_title(); ?></h1>
-            <div class="hero-content mb-5" style="font-family: 'Questrial', sans-serif; font-size: 26px; font-weight: 500; padding-top: 40px; padding-bottom: 40px; line-height: 36px; color: #F2F2F2;"> <span><?php echo get_the_excerpt(); ?></span> 
+            <h1 class="hero-title"><?php the_title(); ?></h1>
+            <div class="hero-content mb-5"> <span><?php echo get_the_excerpt(); ?></span> 
             </div>                 
         </div>             
     </div>         
@@ -18,7 +18,7 @@
     </div>
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex flex-col gap-10"> 
-            <h2 class="hero-title" style="font-family: 'Audiowide', sans-serif; color: #3B65AF; font-weight: 400; font-size: 70px; line-height: 100px; text-transform: uppercase;"><?php the_title(); ?></h2> 
+            <h2 class="hero-title"><?php the_title(); ?></h2> 
             <div class="flex flex-col gap-10 medium-content-text" style="font-family: 'Questrial', sans-serif; font-size: 20px; font-weight: 500; line-height: 30px; color: #F2F2F2;">
                 <?php the_content(); ?>
             </div>                 

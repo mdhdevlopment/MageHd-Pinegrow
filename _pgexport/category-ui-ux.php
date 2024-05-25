@@ -4,10 +4,10 @@
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
             <div class="w-10/12"> 
-                <div class="hero-title" style="font-family: 'Audiowide', sans-serif; color: #3B65AF; font-weight: 400; font-size: 70px; line-height: 100px; text-transform: uppercase;"> 
+                <div class="hero-title"> 
                     <?php echo single_cat_title(); ?> 
                 </div>                     
-                <div class="hero-content mb-5" style="font-family: 'Questrial', sans-serif; font-size: 26px; font-weight: 500; padding-top: 40px; padding-bottom: 40px; line-height: 36px; color: #F2F2F2;"> 
+                <div class="hero-content mb-5"> 
                     <?php echo category_description(); ?> 
                 </div>                     
             </div>                 
@@ -157,12 +157,13 @@
         </div>             
         <div class="view-all-btn-warp"> <a href="<?php echo esc_url( get_permalink() ); ?>" class="border-btn view-all-btn"> <span><?php _e( 'View All', 'mage_hd_theme' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
         </div>             
+        <?php _e( 'featured', 'mage_hd_theme' ); ?> 
     </div>         
 </section>     
 <section class="featured py-120"> 
-    <div class="max-w-[90vw] mx-auto w-full lg:container" style="vertical-align: middle; justify-content: center; display: flex; flex-direction: column; align-items: center;"> 
+    <div class="max-w-[90vw] mx-auto w-full lg:container featured-container"> 
         <h3 class="large-inner-heading text-center"><?php _e( 'We Featured IN', 'mage_hd_theme' ); ?></h3> 
-        <div class="featured-list" style="display: flex; vertical-align: middle; align-items: center; justify-content: center; gap: 20px; margin-top: 80px;"> 
+        <div class="featured-list"> 
             <?php
                 $industry_partners_query_args = array(
                     'post__not_in' => PG_Helper_v2::getShownPosts(),

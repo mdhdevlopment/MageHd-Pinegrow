@@ -6,12 +6,12 @@
 ?>
 <?php get_header(); ?>
 
-<section class="home-banner"> 
+<section class="home-banner hero-banner"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
         <div class="flex"> 
             <div class="w-10/12"> 
-                <h1 class="hero-title" style="font-family: 'Audiowide', sans-serif; color: #3B65AF; font-weight: 400; font-size: 70px; line-height: 100px;"><?php echo get_field( 'banner_title' ); ?></h1> 
-                <div class="hero-content mb-5" style="font-family: 'Questrial', sans-serif; font-size: 26px; font-weight: 500; padding-top: 40px; padding-bottom: 40px; line-height: 36px; color: #F2F2F2;">
+                <h1 class="hero-title"><?php echo get_field( 'banner_title' ); ?></h1> 
+                <div class="hero-content mb-5">
                     <?php echo get_field( 'banner_content' ); ?>
                 </div>
                 <a href="<?php echo esc_url( get_field( 'banner_button_link' ) ); ?>" class="blue-btn"> <span><?php echo get_field( 'banner_button_text' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
