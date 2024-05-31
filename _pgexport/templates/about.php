@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 
-<section class="hero-banner py-120" style="position: relative;"> 
+<section class="hero-banner py-120 relative"> 
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
             <div class="w-10/12"> 
@@ -19,7 +19,7 @@
     </div>         
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-eclipse-left.svg" class="cirle-left"> 
 </section>     
-<section class="result-driven py-120" style="position: relative;"> 
+<section class="result-driven py-120 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
         <div class="flex flex-row sm:flex result-driven-row"> 
             <div class="sm:w-12/12 md:w-6/12"> 
@@ -35,7 +35,7 @@
     </div>         
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
 </section>     
-<section class="recog-section py-120 border-y border-#F2F2F2" style="position: relative;"> 
+<section class="recog-section py-120 border-y border-#F2F2F2 relative"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?></h3> 
         <div class="recog-list"> 
@@ -53,7 +53,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right"> 
     </div>         
 </section>     
-<section class="our-mission py-120" style="position: relative;"> 
+<section class="our-mission py-120 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
         <div class="flex flex-row sm:flex gap-5"> 
             <div class="sm:w-12/12 md:w-6/12"> 
@@ -102,7 +102,7 @@
         </div>
     </div>
 </section>     
-<section class="client-testimonial-section py-120" style="position: relative;"> 
+<section class="client-testimonial-section py-120 relative"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h3> 
         <div class="large-content-text text-center"> 

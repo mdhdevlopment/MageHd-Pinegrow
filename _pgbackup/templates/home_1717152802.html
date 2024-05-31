@@ -1,11 +1,11 @@
 <html wp-template wp-template-export-as="home.php" wp-template-post-template wp-template-post-template-name="Home" wp-site-content> 
-    <section class="home-banner"> 
+    <section class="home-banner hero-banner"> 
         <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
             <div class="flex"> 
                 <div class="w-10/12"> 
-                    <h1 class="hero-title" wp-acf-get-field-2="banner_title" style="font-family: 'Audiowide', sans-serif; color: #3B65AF; font-weight: 400; font-size: 70px; line-height: 100px;"> 
+                    <h1 class="hero-title" wp-acf-get-field-2="banner_title"> 
                             Digital marketing Services  </h1> 
-                    <div class="hero-content mb-5" wp-acf-get-field-3="banner_content" style="font-family: 'Questrial', sans-serif; font-size: 26px; font-weight: 500; padding-top: 40px; padding-bottom: 40px; line-height: 36px; color: #F2F2F2;"> 
+                    <div class="hero-content mb-5" wp-acf-get-field-3="banner_content"> 
                         We offer the best digital marketing services to help you boost
                         your business online. With our comprehensive list of services, we
                         can generate more leads, increase website traffic and conversions,
@@ -13,8 +13,7 @@
                         stronger online presence. Our team of experienced professionals is
                         here to work with you every step of the way on improving your
                         digital marketing efforts. 
-</div>
-                    <a href="#" class="blue-btn" wp-acf-get-field-4="banner_button_link" wp-acf-get-field-4-set="href"> <span wp-acf-get-field-5="banner_button_text">Start a Project</span> <i class="fa-solid fa-arrow-right"></i> </a> 
+</div><a href="#" class="blue-btn" wp-acf-get-field-4="banner_button_link" wp-acf-get-field-4-set="href"> <span wp-acf-get-field-5="banner_button_text">Start a Project</span> <i class="fa-solid fa-arrow-right"></i> </a> 
                 </div>                 
             </div>             
         </div>         
@@ -25,7 +24,7 @@
             <iframe title="Dummy Video For Website" width="992" height="650" src="https://www.youtube.com/embed/D0UnqGm_miA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" wp-acf-get-field-5="feature_video" wp-acf-get-field-5-set="src"></iframe>             
         </div>         
     </section>     
-    <section class="featured py-120"> 
+    <section class="featured py-120" data-pgc-section="We Featured IN" data-pgc-define="We Featured IN"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container" style="vertical-align: middle; justify-content: center; display: flex; flex-direction: column; align-items: center;"> 
             <h3 class="large-inner-heading text-center">We Featured IN</h3> 
             <div class="featured-list" style="display: flex; vertical-align: middle; align-items: center; justify-content: center; gap: 20px; margin-top: 80px;"> 
@@ -165,11 +164,10 @@
                     Web Development
 </button>                 
             </div>             
-            <div class="project-main-wrap flex flex-wrap justify-between gap-5"> 
+            <div class="project-main-wrapper flex flex-wrap justify-between gap-5"> 
                 <div class="project-detail md:w-6/12" cms-post="query" cms-post-type="partners" wp-loop="partners" wp-loop-order="DESC" cms-post-type-order="name ASC" cms-post-type-count="4"> 
                     <img class="project-cover-img" alt="Website Project" src="./assets/images/koilsimg@2x.png" cms-post-image/> 
-                    <h4 class="project-title" cms-post-title>Treckians</h4>
-                    <a href="#" cms-post-link class="explore-more"> <span>Explore</span> </a> 
+                    <h4 class="project-title" cms-post-title>Treckians</h4><a href="#" cms-post-link class="explore-more"> <span>Explore</span> </a> 
                 </div>                 
             </div>             
             <div class="view-all-btn-warp"> <a href="/partners/" cms-post-link class="border-btn view-all-btn"> <span>View All</span> <i class="fa-solid fa-arrow-right"></i> </a> 
@@ -196,8 +194,7 @@
                         I saw an increase in my sales right in time for Black Friday!  
 </div>                     
                     <div class="testimonial-info"> 
-                        <h4 class="testimonial-name" cms-post-title>Gina Paige</h4>
-                        <a href="#" class="testimonial-web-link large-content-text" cms-post-field="website_url" cms-post-field-type="content" cms-post-field-acf>Africanancestry.com</a> 
+                        <h4 class="testimonial-name" cms-post-title>Gina Paige</h4><a href="#" class="testimonial-web-link large-content-text" cms-post-field="website_url" cms-post-field-type="content" cms-post-field-acf>Africanancestry.com</a> 
                     </div>                     
                 </div>                 
             </div>             
@@ -209,12 +206,11 @@
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <div class="contact-us-before-footer-col contact-us-before-footer-col flex flex-wrap justify-center"> 
                 <h3 class="large-inner-heading text-center"> 
-                        let’s create remarkable experience for your business </h3>
-                <a href="/contact-us/" class="bg-blue-btn view-all-btn"> <span>Contact us</span> <i class="fa-solid fa-arrow-right"></i> </a> 
+                        let’s create remarkable experience for your business </h3><a href="/contact-us/" class="bg-blue-btn view-all-btn"> <span>Contact us</span> <i class="fa-solid fa-arrow-right"></i> </a> 
             </div>             
         </div>         
     </section>     
-    <section class="blog-section py-120" data-pgc-section="Recent Blog" data-pgc-define="blog" data-pgc-define-name="Recent Blog"> 
+    <section class="blog-section py-120" data-pgc-section="Recent Blog" data-pgc-define="blog" data-pgc-define-name="Recent Blog" data-pgc-define-auto-update="false" data-pgc-define-map-urls="false"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center">Recent Blog Posts</h3> 
             <div class="blog-content-wrap flex flex-wrap justify-between gap-5"> 

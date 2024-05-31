@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="hero-banner py-120" style="position: relative;"> 
+<section class="hero-banner py-120 relative"> 
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
             <div class="w-10/12"> 
@@ -15,7 +15,7 @@
     </div>         
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
 </section>     
-<section class="our-mission py-120 border-y border-#F2F2F2" style="position: relative;"> 
+<section class="our-mission py-120 border-y border-#F2F2F2 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
         <div class="flex flex-row sm:flex gap-5"> 
             <div class="sm:w-12/12 md:w-6/12"> 
@@ -76,7 +76,7 @@
         </div>             
     </div>
 </section>     
-<section class="uiux-process py-120 border-y border-#F2F2F2" style="position: relative;"> 
+<section class="uiux-process py-120 border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
         <div class="large-inner-heading text-center pb-60"> 
             <?php _e( 'OUR UI/UX process', 'mage_hd_theme' ); ?> 
@@ -191,7 +191,7 @@
         </div>             
     </div>         
 </section>     
-<section class="recog-section py-120" style="position: relative;"> 
+<section class="recog-section py-120 relative"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?> </h3> 
         <div class="recog-list"> 

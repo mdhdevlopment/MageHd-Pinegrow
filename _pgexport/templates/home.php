@@ -21,14 +21,14 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-eclipse-left.svg" class="cirle-left"> 
 </section>     
 <section class="home-video-section py-120"> 
-    <div class="max-w-[90vw] mx-auto w-full lg:container" style="display: flex; vertical-align: middle; justify-content: center;"> 
+    <div class="max-w-[90vw] mx-auto w-full lg:container video-container"> 
         <?php echo get_field( 'feature_video' ); ?> 
     </div>         
 </section>     
 <section class="featured py-120"> 
-    <div class="max-w-[90vw] mx-auto w-full lg:container" style="vertical-align: middle; justify-content: center; display: flex; flex-direction: column; align-items: center;"> 
+    <div class="max-w-[90vw] mx-auto w-full lg:container featured-container"> 
         <h3 class="large-inner-heading text-center"><?php _e( 'We Featured IN', 'mage_hd_theme' ); ?></h3> 
-        <div class="featured-list" style="display: flex; vertical-align: middle; align-items: center; justify-content: center; gap: 20px; margin-top: 80px;"> 
+        <div class="featured-list"> 
             <?php
                 $industry_partners_query_args = array(
                     'post__not_in' => PG_Helper_v2::getShownPosts(),
@@ -56,9 +56,9 @@
         </div>             
     </div>         
 </section>     
-<section class="result-driven py-120" style="position: relative;"> 
+<section class="result-driven py-120 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
-        <div class="flex flex-row sm:flex" style="display: flex; vertical-align: middle; align-items: flex-end; gap: 20px;"> 
+        <div class="flex flex-row sm:flex result-driven-row"> 
             <div class="sm:w-12/12 md:w-6/12"> 
                 <h3 class="large-inner-heading pb-5"><?php echo get_field( 'result_driven_service_title' ); ?></h3> 
                 <div class="large-content-text">
@@ -79,7 +79,7 @@
             <?php echo category_description( '217,1' ); ?>
         </div>             
     </div>         
-    <div class="digital-inner-section" style="position: relative;"> 
+    <div class="digital-inner-section relative"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <div class="flex flex-row sm:flex digitalservices-inner-row"> 
                 <div class="digitalservices-col sm:w-12/12 md:w-6/12"> 
@@ -115,7 +115,7 @@
         </div>             
     </div>         
 </section>     
-<section class="recog-section py-120" style="position: relative;"> 
+<section class="recog-section py-120 relative"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?> </h3> 
         <div class="recog-list"> 
@@ -224,7 +224,7 @@
         </div>             
     </div>         
 </section>     
-<section class="client-testimonial-section py-120" style="position: relative;"> 
+<section class="client-testimonial-section py-120 relative"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h3> 
         <div class="large-content-text text-center"> 

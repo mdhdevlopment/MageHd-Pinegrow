@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <html <?php language_attributes(); ?>>____WP_END_HEADER____         
-    <section class="hero-banner py-120" style="position: relative;"> 
+    <section class="hero-banner py-120 relative"> 
         <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
             <div class="flex"> 
                 <div class="w-10/12"> 
@@ -47,7 +47,7 @@
             </div>                 
         </div>             
     </section>         
-    <section class="recog-section py-120" style="position: relative;"> 
+    <section class="recog-section py-120 relative"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?> </h3> 
             <div class="recog-list"> 
