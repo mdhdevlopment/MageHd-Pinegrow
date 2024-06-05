@@ -21,10 +21,10 @@
             <button class="border-btn uiux-btn active" id="all"> 
                 <?php _e( 'All', 'mage_hd_theme' ); ?> 
             </button>                 
-            <button class="border-btn uiux-btn" id="category-website-project"> 
+            <button class="border-btn uiux-btn" id="case_study_category-website-project"> 
                 <?php _e( 'Website Project', 'mage_hd_theme' ); ?> 
             </button>                 
-            <button class="border-btn uiux-btn" id="category-mobile-app-project"> 
+            <button class="border-btn uiux-btn" id="case_study_category-mobile-app-project"> 
                 <?php _e( 'Mobile App Project', 'mage_hd_theme' ); ?> 
             </button>                 
         </div>             

@@ -116,7 +116,7 @@
 <section class="project py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center"><?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?></h3> 
-        <div class="blog-category uiux-category"> 
+        <div class="blog-category uiux-category py-120"> 
             <button class="border-btn uiux-btn active" id="all"> 
                 <?php _e( 'All', 'mage_hd_theme' ); ?>
             </button>                 
@@ -191,22 +191,22 @@
         </div>             
     </div>         
 </section>     
-<section class="recog-section py-120 relative"> 
+<section class="recog-section py-120 relative  border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?> </h3> 
         <div class="recog-list"> 
             <div class="recog-list-logo flex justify-center gap-5"> 
-                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/BBB-logo.svg"/> 
+                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BBB-logo.svg"/> 
             </div>                 
             <div class="recog-list-logo flex justify-center gap-5"> 
-                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/clucth-florida.svg"/> 
-                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/clucth-us.svg"/> 
-                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/clucth-black-owned.svg"/> 
-                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/clucth-tampa.svg"/> 
+                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clucth-florida.svg"/> 
+                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clucth-us.svg"/> 
+                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clucth-black-owned.svg"/> 
+                <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clucth-tampa.svg"/> 
             </div>                 
         </div>             
-        <img src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/eclipse-left.svg" class="cirle-left"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/eclipse-right.svg" class="cirle-right"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right"> 
     </div>         
 </section>
 <section class="contact-us-before-footer py-120 border-y border-#F2F2F2"> 
