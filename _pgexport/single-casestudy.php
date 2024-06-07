@@ -25,7 +25,7 @@
             </div>             
         </div>
     </section>
-    <section class="py-120 border-y border-#F2F2F2" style="position: relative;"> 
+    <section class="py-120 border-y border-#F2F2F2 relative"> 
         <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
             <div class="flex flex-row sm:flex gap-10"> 
                 <div class="sm:w-12/12 md:w-6/12"> 
@@ -78,7 +78,7 @@
             </div>             
         </div>         
     </section>
-    <section class="client-testimonial-section py-120" style="position: relative;"> 
+    <section class="client-testimonial-section py-120 border-y border-#F2F2F2 relative"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h3> 
             <div class="large-content-text text-center"> 
@@ -106,7 +106,7 @@
                         </div>                         
                         <div class="testimonial-list"> 
                             <div class="quote-warp"> 
-                                <img class="quote-icon" alt="" src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/quote.svg"/> 
+                                <img class="quote-icon" alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/quote.svg"/> 
                             </div>                             
                             <div class="testimonial-comment large-content-text">
                                 <?php the_content(); ?>
@@ -122,8 +122,8 @@
                 <p><?php _e( 'Sorry, no posts matched your criteria.', 'mage_hd_theme' ); ?></p>
             <?php endif; ?> 
         </div>         
-        <img src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/eclipse-left.svg" class="cirle-left"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/templates/assets/images/eclipse-right.svg" class="cirle-right"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right"> 
     </section>
     <section class="contact-us-before-footer py-120 border-y border-#F2F2F2"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 

@@ -1039,6 +1039,9 @@ html {
 .pb-60 {
     padding-bottom: 60px;
 }
+.pb-10 {
+    padding-bottom: 40px;
+}
 
 .pb-5 {
     padding-bottom: 20px;
@@ -1776,6 +1779,20 @@ p span {
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+.casestudy-single-hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%)
 }
 .case-study-detail{
     border-bottom: 1px solid #F2F2F2;
@@ -1785,7 +1802,7 @@ p span {
 .become-affiliate-row{
     display: flex; 
     vertical-align: middle; 
-    gap: 20px;
+    gap: 40px;
     margin-top: 40px;
 }
 .benefit-list h4 {
@@ -1812,7 +1829,11 @@ p span {
 .affiliate-account input, 
 .affiliate-account input:focus, 
 .affiliate-account textarea, 
-.affiliate-account textarea:focus {
+.affiliate-account textarea:focus,
+.build-tool input, 
+.build-tool input:focus, 
+.build-tool textarea, 
+.build-tool textarea:focus {
     background: #00000000 !important;
     border: none !important;
     border-bottom: 1px solid #F2F2F2 !important;
@@ -1837,7 +1858,8 @@ p span {
 .affiliate-account .ff-el-form-check {
     margin-top: 80px;
 }
-.affiliate-account .asterisk-right {
+.affiliate-account .asterisk-right,
+.build-tool .asterisk-right {
     display: none !important;
 }
 .affiliate-account button {
@@ -1874,13 +1896,14 @@ p span {
     padding-left: 20px;
     padding-right: 20px;
 }
-.affiliate-form-wrap {
+.affiliate-form-wrap,
+.utm-url-form-wrap {
     padding: 80px;
     border-radius: 10px;
     border: 3px solid #3B65AF;
     margin-top: 100px;
 }
-.affiliate-form-title{
+.form-inner-title{
     color: #3B65AF;
     font-family: 'Audiowide', sans-serif;
     font-size: 30px;
@@ -1890,15 +1913,72 @@ p span {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-
-
-
-
-
-
-
-
-
+.build-tool-heading{
+    color: #F2F2F2;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.build-tool button {
+    display: block !important;
+    margin: 80px auto 0;
+    color: #3B65AF !important;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 26px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 36px !important;
+    text-transform: uppercase;
+    background: #00000000 !important;
+    border: 2px solid #3B65AF !important;
+    border-radius: 50px !important;
+    padding: 20px 30px !important;
+}
+.build-tool button:hover{
+    background: #3B65AF !important;
+    color: #fff !important;
+}
+.build-tool button:after {
+    content: "\f061";
+    margin-left: 10px;
+    font-family: 'FontAwesome';
+}
+.utm-social-img {
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+}
+.utm-social-img:hover{
+    background: #3B65AF;
+    border: 1px solid #3B65AF;
+    cursor: pointer;
+}
+.utm-social-share ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.utm-description-text {
+    margin: 80px 0;
+}
+.utm-parameter h4{
+    color: #3B65AF;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+.utm-parameter h4:first-child{
+    margin-top: 0px;
+}
 
 @media only screen and (max-width: 1536px) {
     .webservice-wrapper,
@@ -2084,7 +2164,9 @@ p span {
     .pb-60 {
         padding-bottom: 40px;
     }
-
+    .pb-10 {
+        padding-bottom: 30px;
+    }
     .sm\:container {
         max-width: 1024px;
     }
@@ -2118,6 +2200,55 @@ p span {
 }
 
 @media only screen and (max-width: 991px) {
+    .affiliate-account input, 
+    .affiliate-account input:focus, 
+    .affiliate-account textarea, 
+    .affiliate-account textarea:focus,
+    .build-tool input, 
+    .build-tool input:focus, 
+    .build-tool textarea, 
+    .build-tool textarea:focus  {
+        padding-bottom: 20px !important;
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    .utm-parameter h4{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .affiliate-account .ff-el-form-check {
+        margin-top: 20px;
+    }
+    .utm-social-share ul {
+        gap: 20px;
+    }
+    .utm-description-text {
+        margin: 40px 0;
+    }
+    .form-inner-title{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .build-tool-heading{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .affiliate-account label span{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .affiliate-account button {
+        font-size: 20px !important;
+        line-height: 30px !important;
+        margin: 40px auto 0;
+        padding: 10px 30px !important;
+    }
+    .affiliate-form-wrap,
+    .utm-url-form-wrap {
+        padding: 20px;
+        margin-top: 40px;
+    }
     .become-affiliate-row{
         margin-top:0;
     }
@@ -2225,6 +2356,17 @@ p span {
 }
 
 @media only screen and (max-width: 768px) {
+    .utm-parameter h4{
+        font-size: 18px;
+        line-height: 28px;
+        margin: 20px 0;
+    }
+    .utm-social-share ul {
+        gap: 10px;
+    }
+    .utm-description-text {
+        margin: 20px 0;
+    }
     .case-study-cat-detail {
         padding: 40px 0;
     }
@@ -2337,6 +2479,9 @@ p span {
 
     .pb-60 {
         padding-bottom: 20px;
+    }
+    .pb-10 {
+        padding-bottom: 15px;
     }
 
     nav .logo img {
