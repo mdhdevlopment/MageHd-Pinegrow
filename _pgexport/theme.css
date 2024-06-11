@@ -1247,6 +1247,9 @@ p span {
     background-size: contain;
     position: relative;
 }
+.hero-banner .blue-btn {
+    text-transform: uppercase;
+}
 
 .digitalservices {
     border-top: 1px solid  #F2F2F2;
@@ -1642,6 +1645,7 @@ p span {
 
 .blog-content img {
     border-radius: 10px;
+    width: auto;
 }
 
 /* blog archive */
@@ -2502,6 +2506,7 @@ p span {
     .blue-btn {
         font-size: 20px;
         line-height: 30px;
+        padding: 14px 20px;
     }
 
     .home-video-section iframe,

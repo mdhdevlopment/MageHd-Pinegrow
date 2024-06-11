@@ -9,8 +9,8 @@
 <section class="hero-banner py-120 relative"> 
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
-            <div class="w-10/12"> 
-                <h1 class="hero-title"> <?php _e( 'our recent blog post archive', 'mage_hd_theme' ); ?> </h1> 
+            <div class="w-12/12"> 
+                <h1 class="hero-title"> <?php _e( 'our recent blog post', 'mage_hd_theme' ); ?> </h1> 
                 <div class="hero-content mb-5"> 
                     <?php _e( 'Learn valuable information about digital marketing.', 'mage_hd_theme' ); ?>
                 </div>                     
@@ -59,7 +59,7 @@
                     </div>                         
                     <div class="md:w-6/12"> 
                         <h4 class="project-title"><?php the_title(); ?></h4> 
-                        <p class="medium-content-text"><?php echo get_the_excerpt(); ?></p> <a href="<?php echo esc_url( get_permalink() ); ?>" class="explore-more medium-content-text"> <span><?php _e( 'Explore', 'mage_hd_theme' ); ?></span> </a> 
+                        <p class="medium-content-text"><?php echo get_the_excerpt(); ?></p> <a href="<?php echo esc_url( get_permalink() ); ?>" class="explore-more medium-content-text"> <span><?php _e( 'Read More', 'mage_hd_theme' ); ?></span> </a> 
                     </div>                         
                 </div>
             <?php endwhile; ?>

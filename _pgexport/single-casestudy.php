@@ -5,7 +5,7 @@
 </section>     
     <section class="blog-content  service-post-content py-120 border-y border-#F2F2F2">
         <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
-            <h1 class="large-inner-heading text-center pb-60"><?php the_title(); ?></h1> 
+            <h1 class="large-inner-heading pb-60"><?php the_title(); ?></h1> 
             <div class="large-content-text pb-60">
                 <?php the_content(); ?>
             </div>             

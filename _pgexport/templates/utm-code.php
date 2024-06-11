@@ -9,7 +9,7 @@
 <section class="hero-banner py-120 relative"> 
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
-            <div class="w-10/12"> 
+            <div class="w-11/12"> 
                 <h1 class="hero-title"><?php echo get_field( 'banner_title' ); ?></h1> 
                 <div class="hero-content mb-5">
                     <?php echo get_field( 'banner_content' ); ?>

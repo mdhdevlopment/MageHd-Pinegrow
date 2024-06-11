@@ -182,7 +182,7 @@
 <section class="project py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center"><?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?></h3> 
-        <div class="blog-category"> 
+        <div class="blog-category py-120"> 
             <button class="border-btn web-deisgn active" id="all"> 
                 <?php _e( 'All', 'mage_hd_theme' ); ?>
             </button>                 
@@ -224,7 +224,7 @@
         </div>             
     </div>         
 </section>     
-<section class="client-testimonial-section py-120 relative"> 
+<section class="client-testimonial-section py-120 relative border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h3> 
         <div class="large-content-text text-center"> 

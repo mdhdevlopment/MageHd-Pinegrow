@@ -3,7 +3,7 @@
 <section class="hero-banner py-120 relative"> 
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <div class="flex"> 
-            <div class="w-10/12"> 
+            <div class="w-12/12"> 
                 <div class="hero-title"> 
                     <?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?> 
                 </div>                     

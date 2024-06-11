@@ -54,7 +54,7 @@
     </div>         
 </section>     
 <section class="our-mission py-120 relative"> 
-    <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
+    <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <div class="flex flex-row sm:flex gap-5"> 
             <div class="sm:w-12/12 md:w-6/12"> 
                 <img class="our-mission-img" alt="" src="<?php echo PG_Image::getUrl( get_field( 'our_mission_image' ), 'large' ) ?>"/> 

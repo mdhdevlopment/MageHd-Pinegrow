@@ -155,9 +155,8 @@
                 <p><?php _e( 'Sorry, no posts matched your criteria.', 'mage_hd_theme' ); ?></p>
             <?php endif; ?> 
         </div>             
-        <div class="view-all-btn-warp"> <a href="<?php echo esc_url( get_permalink() ); ?>" class="border-btn view-all-btn"> <span><?php _e( 'View All', 'mage_hd_theme' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
-        </div>             
-        <?php _e( 'featured', 'mage_hd_theme' ); ?> 
+        <!--<div class="view-all-btn-warp"> <a href="/service/" cms-post-link class="border-btn view-all-btn"> <span>View All</span> <i class="fa-solid fa-arrow-right"></i> </a> 
+        </div>  -->             
     </div>         
 </section>     
 <section class="featured py-120"> 
