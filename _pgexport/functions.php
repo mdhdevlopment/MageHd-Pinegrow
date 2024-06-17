@@ -37,6 +37,28 @@ function mage_hd_theme_setup() {
      */
     /* Pinegrow generated Register Menus Begin */
 
+    register_nav_menu(  'quick_links', __( 'Quick links', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'tools', __( 'Tools', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'clients_links', __( 'Clients Links', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'digital_marketing', __( 'Digital Marketing', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'web_design_development', __( 'Web Design & Development', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'mobile_app_development', __( 'Mobile App Development', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'uiux_design_services', __( 'UI/UX Design Services', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'digital_marketing_industry', __( 'Digital Marketing by Industry', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'web_design_services_industry', __( 'Web Design Services by Industry', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'mobile_app_development_type', __( 'Mobile App Development by Type', 'mage_hd_theme' )  );
+
+    register_nav_menu(  'privacy-terms', __( 'Privacy & Terms', 'mage_hd_theme' )  );
+
     /* Pinegrow generated Register Menus End */
     
 /*
@@ -84,6 +106,19 @@ function mage_hd_theme_init() {
      * Register custom post types. You can also move this code to a plugin.
      */
     /* Pinegrow generated Custom Post Types Begin */
+
+    register_post_type('newsletter', array(
+        'labels' => 
+            array(
+                'name' => __( 'Subscribe Newsletter', 'mage_hd_theme' ),
+                'singular_name' => __( 'Subscribe Newsletter', 'mage_hd_theme' )
+            ),
+        'public' => false,
+        'supports' => array( 'title', 'editor', 'author' ),
+        'show_in_rest' => false,
+        'show_ui' => true,
+        'show_in_menu' => true
+    ));
 
     /* Pinegrow generated Custom Post Types End */
     
@@ -140,6 +175,14 @@ function mage_hd_theme_customize_register( $wp_customize ) {
 
     /* Pinegrow generated Customizer Controls Begin */
 
+    $wp_customize->add_section( 'contact_info', array(
+        'title' => __( 'Contact Infromation', 'mage_hd_theme' )
+    ));
+
+    $wp_customize->add_section( 'social_link', array(
+        'title' => __( 'Social Link', 'mage_hd_theme' )
+    ));
+
     $wp_customize->add_section( 'social_link', array(
         'title' => __( 'Social Link', 'mage_hd_theme' )
     ));
@@ -152,6 +195,42 @@ function mage_hd_theme_customize_register( $wp_customize ) {
         'title' => __( 'Social Link', 'mage_hd_theme' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
+
+    $wp_customize->add_setting( 'contact_info_location', array(
+        'type' => 'theme_mod',
+        'default' => __( '610 E Zack St. Ste 110-2177Tampa, FL 33602', 'mage_hd_theme' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'contact_info_location', array(
+        'label' => __( 'Location', 'mage_hd_theme' ),
+        'type' => 'text',
+        'section' => 'contact_info'
+    ));
+
+    $wp_customize->add_setting( 'contact_info_phone', array(
+        'type' => 'theme_mod',
+        'default' => __( '800-344-5345', 'mage_hd_theme' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'contact_info_phone', array(
+        'label' => __( 'Contact No', 'mage_hd_theme' ),
+        'type' => 'textarea',
+        'section' => 'contact_info'
+    ));
+
+    $wp_customize->add_setting( 'contact_info_email', array(
+        'type' => 'theme_mod',
+        'default' => __( 'hello@magehd.com', 'mage_hd_theme' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'contact_info_email', array(
+        'label' => __( 'Email', 'mage_hd_theme' ),
+        'type' => 'textarea',
+        'section' => 'contact_info'
+    ));
 
     $wp_customize->add_setting( 'facebook', array(
         'type' => 'theme_mod',
@@ -195,42 +274,6 @@ function mage_hd_theme_customize_register( $wp_customize ) {
         'label' => __( 'Instagram', 'mage_hd_theme' ),
         'type' => 'url',
         'section' => 'social_link'
-    ));
-
-    $wp_customize->add_setting( 'contact_info_location', array(
-        'type' => 'theme_mod',
-        'default' => __( '610 E Zack St. Ste 110-2177Tampa, FL 33602', 'mage_hd_theme' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'contact_info_location', array(
-        'label' => __( 'Location', 'mage_hd_theme' ),
-        'type' => 'text',
-        'section' => 'contact_info'
-    ));
-
-    $wp_customize->add_setting( 'contact_info_phone', array(
-        'type' => 'theme_mod',
-        'default' => __( '800-344-5345', 'mage_hd_theme' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'contact_info_phone', array(
-        'label' => __( 'Contact No', 'mage_hd_theme' ),
-        'type' => 'textarea',
-        'section' => 'contact_info'
-    ));
-
-    $wp_customize->add_setting( 'contact_info_email', array(
-        'type' => 'theme_mod',
-        'default' => __( 'hello@magehd.com', 'mage_hd_theme' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'contact_info_email', array(
-        'label' => __( 'Email', 'mage_hd_theme' ),
-        'type' => 'textarea',
-        'section' => 'contact_info'
     ));
 
     /* Pinegrow generated Customizer Controls End */
@@ -293,6 +336,22 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 require_once "inc/custom.php";
 if( !class_exists( 'PG_Helper_v2' ) ) { require_once "inc/wp_pg_helpers.php"; }
 if( !class_exists( 'PG_Smart_Walker_Nav_Menu' ) ) { require_once "inc/wp_smart_navwalker.php"; }
+if( !class_exists( 'PG_Simple_Form_Mailer' ) ) { require_once "inc/wp_simple_form_mailer.php"; }
 
     /* Pinegrow generated Include Resources End */
+
+/* Creating Editor Blocks with Pinegrow */
+
+if ( ! function_exists('mage_hd_theme_blocks_init') ) :
+function mage_hd_theme_blocks_init() {
+    // Register blocks. Don't edit anything between the following comments.
+    /* Pinegrow generated Register Pinegrow Blocks Begin */
+
+    /* Pinegrow generated Register Pinegrow Blocks End */
+}
+add_action('init', 'mage_hd_theme_blocks_init');
+endif;
+
+/* End of creating Editor Blocks with Pinegrow */
+
 ?>

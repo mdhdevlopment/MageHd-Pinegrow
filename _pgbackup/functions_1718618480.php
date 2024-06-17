@@ -183,12 +183,12 @@ function mage_hd_theme_customize_register( $wp_customize ) {
         'title' => __( 'Social Link', 'mage_hd_theme' )
     ));
 
-    $wp_customize->add_section( 'social_link', array(
-        'title' => __( 'Social Link', 'mage_hd_theme' )
-    ));
-
     $wp_customize->add_section( 'contact_info', array(
         'title' => __( 'Contact Infromation', 'mage_hd_theme' )
+    ));
+
+    $wp_customize->add_section( 'social_link', array(
+        'title' => __( 'Social Link', 'mage_hd_theme' )
     ));
 
     $wp_customize->add_section( 'social_link', array(

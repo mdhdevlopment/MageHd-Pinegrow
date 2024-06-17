@@ -19,14 +19,16 @@
     </head>     
     <body>
         <header>
-            <nav class="w-full lg:container z-20 top-0 left-0  max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-8">
-                <a class="logo" href="#" cms-site-link="home"> <img src="/assets/images/logo.png" cms-site-logo class="h-14 w-full object-cover"> </a>
+            <nav class="w-full lg:container z-20 top-0 left-0  max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-8"><a class="logo" href="#" cms-site-link="home"> <img src="/assets/images/logo.png" cms-site-logo class="h-14 w-full object-cover"> </a>
                 <ul class="navigation">
-                    <input type="checkbox" id="check"/><span class="menu lg:container"> <div class="w-full z-20 top-0 left-0  max-w-[90vw] flex  justify-between items-center relative mx-auto py-8"><a class="logo" href="#" cms-site-link="home"> <img src="/assets/images/logo.png" cms-site-logo class="h-14 w-full object-cover"> </a> 
+                    <input type="checkbox" id="check"/>
+                    <span class="menu lg:container"> <div class="w-full z-20 top-0 left-0  max-w-[90vw] flex  justify-between items-center relative mx-auto py-8">
+                            <a class="logo" href="#" cms-site-link="home"> <img src="/assets/images/logo.png" cms-site-logo class="h-14 w-full object-cover"> </a> 
                             <label for="check" class="close-menu"> 
                                 <img src="/assets/images/close-icon.svg"/>
                             </label>                             
-                        </div> <li cms-menu="primary" class="header-menu-item"><a href="#">Home</a>
+                        </div> <li cms-menu="primary" class="header-menu-item">
+                            <a href="#">Home</a>
                         </li> </span>
                 </ul>
                 <label for="check" class="open-menu">
@@ -56,37 +58,40 @@
         </main>
         <footer>
             <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
-                <div class="footer-news-letters py-120">
+                <div class="footer-news-letters">
                     <h3 class="large-inner-heading text-center pb-60">Subscribe to our newsletter</h3>
-                    <form class="subscribe-form" cms-form="subscribe-form" cms-form-send-email="true" cms-form-post-type="newsletter" cms-form-save-as-post-type="true" cms-form-email="developmentMHD@outlook.com" cms-form-post-type-register cms-form-post-type-name="Subscribe Newsletter" cms-form-post-type-name-singular="Subscribe Newsletter" cms-form-subject="Subscribe Newsletter" cms-form-show-message="true">
-                        <input class="subscribe-input" placeholder="Enter email" type="text"/>
-                        <button class="subscribe-btn"><i class="fa fa-long-arrow-right"></i>
+                    <div class="subscribe-form" cms-form="subscribe-form" cms-form-save-as-post-type="true" cms-form-send-email="true" cms-form-post-type="newsletter">
+                        <input class="[border:none] [outline:none] font-inter text-7xl bg-[transparent] flex-1 relative leading-[36px] text-dark-white text-left sm:self-stretch sm:h-auto mq350small:w-[150px]" placeholder="Enter email" type="text"/>
+                        <button class="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-start hover:animate-[1s_ease_0s_1_normal_none_scale-up] hover:opacity-[1] sm:w-auto sm:[align-self:unset] sm:gap-[0px]">
+                            <img class="relative w-[30px] h-[30px] overflow-hidden shrink-0 hover:box-border hover:border-[1px] hover:border-solid hover:border-black" alt="" src="assets/images/arrowright.svg"/>
                         </button>
-                    </form>                     
+                    </div>                     
                 </div>
                 <div class="footer-menus">
-                    <div class="footer-logo pb-60">
-                        <a class="logo" href="#" cms-site-link="home"> <img src="/assets/images/logo.png" cms-site-logo class="h-14 object-cover"> </a>
+                    <div class="footer-logo pb-60"><a class="logo" href="#" cms-site-link="home"> <img src="/assets/images/logo.png" cms-site-logo class="h-14 object-cover"> </a>
                     </div>
                     <div class="footer-menu-wraper flex flex-row flex-wrap gap-2">
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Quick links</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="quick_links" class="header-menu-item" cms-menu-register cms-menu-register-description="Quick links"><a href="#">Home</a>
+                                <li cms-menu="quick_links" class="header-menu-item" cms-menu-register cms-menu-register-description="Quick links">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Tools</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="tools" class="header-menu-item" cms-menu-register cms-menu-register-description="Tools"><a href="#">Home</a>
+                                <li cms-menu="tools" class="header-menu-item" cms-menu-register cms-menu-register-description="Tools">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Clients Links</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="clients_links" class="header-menu-item" cms-menu-register cms-menu-register-description="Clients Links"><a href="#">Home</a>
+                                <li cms-menu="clients_links" class="header-menu-item" cms-menu-register cms-menu-register-description="Clients Links">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
@@ -105,56 +110,64 @@
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Digital Marketing</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="digital_marketing" class="header-menu-item" cms-menu-register cms-menu-register-description="Digital Marketing"><a href="#">Home</a>
+                                <li cms-menu="digital_marketing" class="header-menu-item" cms-menu-register cms-menu-register-description="Digital Marketing">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Web Design & Development</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="web_design_development" class="header-menu-item" cms-menu-register cms-menu-register-description="Web Design & Development"><a href="#">Home</a>
+                                <li cms-menu="web_design_development" class="header-menu-item" cms-menu-register cms-menu-register-description="Web Design & Development">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Mobile App Development</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="mobile_app_development" class="header-menu-item" cms-menu-register cms-menu-register-description="Mobile App Development"><a href="#">Home</a>
+                                <li cms-menu="mobile_app_development" class="header-menu-item" cms-menu-register cms-menu-register-description="Mobile App Development">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">UI/UX Design Services</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="uiux_design_services" class="header-menu-item" cms-menu-register cms-menu-register-description="UI/UX Design Services"><a href="#">Home</a>
+                                <li cms-menu="uiux_design_services" class="header-menu-item" cms-menu-register cms-menu-register-description="UI/UX Design Services">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Digital Marketing by Industry</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="digital_marketing_industry" class="header-menu-item" cms-menu-register cms-menu-register-description="Digital Marketing by Industry"><a href="#">Home</a>
+                                <li cms-menu="digital_marketing_industry" class="header-menu-item" cms-menu-register cms-menu-register-description="Digital Marketing by Industry">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Web Design Services by Industry</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="web_design_services_industry" class="header-menu-item" cms-menu-register cms-menu-register-description="Web Design Services by Industry"><a href="#">Home</a>
+                                <li cms-menu="web_design_services_industry" class="header-menu-item" cms-menu-register cms-menu-register-description="Web Design Services by Industry">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">Mobile App Development by Type</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="mobile_app_development_type" class="header-menu-item" cms-menu-register cms-menu-register-description="Mobile App Development by Type"><a href="#">Home</a>
+                                <li cms-menu="mobile_app_development_type" class="header-menu-item" cms-menu-register cms-menu-register-description="Mobile App Development by Type">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title">UI/UX Design Services</h4>
                             <ul class="footer-nav">
-                                <li cms-menu="uiux_design_services" class="header-menu-item" cms-menu-register cms-menu-register-description="UI/UX Design Services"><a href="#">Home</a>
+                                <li cms-menu="uiux_design_services" class="header-menu-item" cms-menu-register cms-menu-register-description="UI/UX Design Services">
+                                    <a href="#">Home</a>
                                 </li>                                 
                             </ul>
                         </div>
@@ -169,11 +182,15 @@
                 </div>
                 <div class="footer-copyright flex justify-between">
                     <p class="footer-copyright-info">Copyright © Mage H.D. Inc.</p>
-                    <div class="footer-social-list social-list flex gap-5" cms-section="social_link" cms-section-title="Social Link"> <a href="#" target="_blank" cms-editable="facebook" cms-editable-type="link" cms-editable-label="Facebook" cms-editable-section="social_link"><img src="assets/images/facebook.svg" alt="" class="social-icon"></a><a href="#" target="_blank" cms-editable="twitter" cms-editable-type="link" cms-editable-label="Twitter" cms-editable-section="social_link"><img src="assets/images/twitter.svg" alt="" class="social-icon"></a><a href="#" target="_blank" cms-editable="linkedin" cms-editable-type="link" cms-editable-label="LinkedIn" cms-editable-section="social_link"><img src="assets/images/linkedin.svg" alt="" class="social-icon"></a><a href="#" target="_blank" cms-editable="instagram" cms-editable-type="link" cms-editable-label="Instagram" cms-editable-section="social_link"><img src="assets/images/instagram.svg" alt="" class="social-icon"></a>
+                    <div class="footer-social-list social-list flex gap-5" cms-section="social_link" cms-section-title="Social Link"> <a href="#" target="_blank" cms-editable="facebook" cms-editable-type="link" cms-editable-label="Facebook" cms-editable-section="social_link"><img src="assets/images/facebook.svg" alt="" class="social-icon"></a>
+                        <a href="#" target="_blank" cms-editable="twitter" cms-editable-type="link" cms-editable-label="Twitter" cms-editable-section="social_link"><img src="assets/images/twitter.svg" alt="" class="social-icon"></a>
+                        <a href="#" target="_blank" cms-editable="linkedin" cms-editable-type="link" cms-editable-label="LinkedIn" cms-editable-section="social_link"><img src="assets/images/linkedin.svg" alt="" class="social-icon"></a>
+                        <a href="#" target="_blank" cms-editable="instagram" cms-editable-type="link" cms-editable-label="Instagram" cms-editable-section="social_link"><img src="assets/images/instagram.svg" alt="" class="social-icon"></a>
                     </div>                     
                     <div class="privacy-terms-menu">
                         <ul class="flex gap-8 privacy-menu-list">
-                            <li cms-menu="privacy-terms" cms-menu-register cms-menu-register-description="Privacy & Terms"><a href="#">Home</a>
+                            <li cms-menu="privacy-terms" cms-menu-register cms-menu-register-description="Privacy & Terms">
+                                <a href="#">Home</a>
                             </li>                             
                         </ul>
                     </div>                     

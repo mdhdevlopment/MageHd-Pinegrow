@@ -436,11 +436,11 @@ select:focus {
     --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
-    --tw-ring-color: #2563eb;
+
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    border-color: #2563eb;
+    border-color: #000000;
 }
 
 input::-moz-placeholder,
@@ -1039,6 +1039,7 @@ html {
 .pb-60 {
     padding-bottom: 60px;
 }
+
 .pb-10 {
     padding-bottom: 40px;
 }
@@ -1072,18 +1073,23 @@ html {
     border-bottom: 1px solid #F2F2F2;
     padding: 40px 20px;
 }
-.menu li a{
+
+.menu li a {
     color: #FFF;
     font-family: 'Audiowide', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 141.667% */
+    line-height: 34px;
+
+    /* 141.667% */
     text-transform: uppercase;
 }
-.menu li:hover a{
+
+.menu li:hover a {
     color: #3B65AF;
 }
+
 .md\:w-6\/12 {
     width: 48%;
 }
@@ -1110,7 +1116,8 @@ html {
     right: 0;
     z-index: -1;
 }
-.hero-title{
+
+.hero-title {
     font-family: 'Audiowide', sans-serif;
     color: #3B65AF;
     font-weight: 400;
@@ -1118,7 +1125,8 @@ html {
     line-height: 100px;
     text-transform: uppercase;
 }
-.hero-content{
+
+.hero-content {
     font-family: 'Questrial', sans-serif;
     font-size: 26px;
     font-weight: 500;
@@ -1127,6 +1135,7 @@ html {
     line-height: 36px;
     color: #F2F2F2;
 }
+
 .blue-btn {
     font-family: 'Questrial', sans-serif;
     color: #F2F2F2;
@@ -1240,6 +1249,123 @@ p span {
     line-height: 30px;
 }
 
+/* footer */
+.subscribe-form input {
+    color: #F2F2F2;
+    font-family: 'Questrial', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+    background: #00000000;
+}
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-btn {
+    color: #fff;
+    font-size: 30px;
+    line-height: 52px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.footer-title {
+    color: #3B65AF;
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-menu {
+    width: 23%;
+}
+
+.footer-nav,
+.footer-nav a {
+    color: #F2F2F2;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.footer-nav a:hover,
+.privacy-terms-menu a:hover {
+    color: #3B65AF;
+}
+
+.footer-logo img {
+    display: block;
+    margin: auto;
+}
+
+.bottom-footer-logos {
+    padding-top: 40px;
+}
+
+footer {
+    border-top: 1px solid #F2F2F2;
+}
+
+.footer-copyright {
+    border-top: 1px solid #F2F2F2;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-contact-location:before {
+    content: "\f041";
+    font-family: 'fontawesome';
+    margin-right: 8px;
+}
+
+.footer-contact-no:before {
+    content: "\f095";
+    font-family: 'fontawesome';
+    margin-right: 8px;
+}
+
+.footer-contact-email:before {
+    content: "\f0e0";
+    font-family: 'fontawesome';
+    margin-right: 8px;
+}
+
+.footer-copyright-info {
+    color: #F2F2F2;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.privacy-terms-menu a {
+    color: #F2F2F2;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.footer-social-list.social-list {
+    margin: 0;
+}
+
+.privacy-terms-menu li {
+    list-style: disc;
+}
+
 .home-banner {
     background: url(assets/images/banner-img.png);
     background-repeat: no-repeat;
@@ -1247,6 +1373,7 @@ p span {
     background-size: contain;
     position: relative;
 }
+
 .hero-banner .blue-btn {
     text-transform: uppercase;
 }
@@ -1290,12 +1417,14 @@ p span {
     width: 45%;
     height: 100%;
 }
-.video-container{
-    display: flex; 
-    vertical-align: middle; 
+
+.video-container {
+    display: flex;
+    vertical-align: middle;
     justify-content: center;
 }
-.featured-list{
+
+.featured-list {
     display: flex;
     vertical-align: middle;
     align-items: center;
@@ -1303,20 +1432,24 @@ p span {
     gap: 20px;
     margin-top: 80px;
 }
-.featured-container{
-    vertical-align: middle; 
-    justify-content: center; 
-    display: flex; 
-    flex-direction: column; 
+
+.featured-container {
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
+
 .featured-container
 .recog-list-logo:first-child {
     margin: 100px 0 40px;
 }
+
 .recog-list-logo:first-child {
     margin: 120px 0 40px;
 }
+
 .why-us-section {
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
@@ -1327,13 +1460,15 @@ p span {
 .why-us-section .large-content-text {
     margin-bottom: 50px;
 }
+
 .result-driven {
     border-top: 1px solid #F2F2F2;
 }
-.result-driven-row{
-    display: flex; 
-    vertical-align: middle; 
-    align-items: flex-end; 
+
+.result-driven-row {
+    display: flex;
+    vertical-align: middle;
+    align-items: flex-end;
     gap: 20px;
 }
 
@@ -1771,13 +1906,16 @@ p span {
 .blog-category.case-stydy-category {
     padding: 0;
 }
+
 .case-study-cat-detail {
     border-bottom: 1px solid #F2F2F2;
     padding: 80px 0;
 }
+
 .case-study-cat-detail.project-detail {
     margin: 0;
 }
+
 /* single case study */
 .casestudy-single-hero {
     height: 600px;
@@ -1785,6 +1923,7 @@ p span {
     background-size: cover;
     position: relative;
 }
+
 .casestudy-single-hero:after {
     content: "";
     position: absolute;
@@ -1796,19 +1935,22 @@ p span {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%)
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
 }
-.case-study-detail{
+
+.case-study-detail {
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 30px;
 }
+
 /* affiliate program */
-.become-affiliate-row{
-    display: flex; 
-    vertical-align: middle; 
+.become-affiliate-row {
+    display: flex;
+    vertical-align: middle;
     gap: 40px;
     margin-top: 40px;
 }
+
 .benefit-list h4 {
     color: #3B65AF;
     font-family: 'Audiowide', sans-serif;
@@ -1820,8 +1962,9 @@ p span {
     border-bottom: 1px solid#F2F2F2;
     padding: 40px 0;
 }
-.benefit-title{
-    color:#F2F2F2;
+
+.benefit-title {
+    color: #F2F2F2;
     font-family: 'Audiowide', sans-serif;
     font-size: 30px;
     font-style: normal;
@@ -1829,14 +1972,15 @@ p span {
     line-height: 40px;
     text-transform: uppercase;
     margin-top: 40px;
-} 
-.affiliate-account input, 
-.affiliate-account input:focus, 
-.affiliate-account textarea, 
+}
+
+.affiliate-account input,
+.affiliate-account input:focus,
+.affiliate-account textarea,
 .affiliate-account textarea:focus,
-.build-tool input, 
-.build-tool input:focus, 
-.build-tool textarea, 
+.build-tool input,
+.build-tool input:focus,
+.build-tool textarea,
 .build-tool textarea:focus {
     background: #00000000 !important;
     border: none !important;
@@ -1850,8 +1994,9 @@ p span {
     line-height: 36px !important;
     padding-bottom: 30px !important;
 }
-.affiliate-account label span{
-    color:#F2F2F2;
+
+.affiliate-account label span {
+    color: #F2F2F2;
     text-align: center;
     font-family: 'Questrial', sans-serif;
     font-size: 26px;
@@ -1859,13 +2004,16 @@ p span {
     font-weight: 500;
     line-height: 36px;
 }
+
 .affiliate-account .ff-el-form-check {
     margin-top: 80px;
 }
+
 .affiliate-account .asterisk-right,
 .build-tool .asterisk-right {
     display: none !important;
 }
+
 .affiliate-account button {
     background: #00000000 !important;
     color: #3B65AF !important;
@@ -1882,24 +2030,28 @@ p span {
     display: block !important;
     padding: 20px 30px !important;
 }
-.affiliate-account button:hover{
+
+.affiliate-account button:hover {
     background: #3B65AF !important;
     color: #fff !important;
 }
+
 .affiliate-account button:after {
     content: "\f061";
     margin-left: 10px;
     font-family: 'FontAwesome';
 }
 
-.affiliate-account .fluentform .ff-el-input--label.ff-el-is-required.asterisk-right label:after{
+.affiliate-account .fluentform .ff-el-input--label.ff-el-is-required.asterisk-right label:after {
     display: none;
 }
+
 .affiliate-container {
     max-width: 990px;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .affiliate-form-wrap,
 .utm-url-form-wrap {
     padding: 80px;
@@ -1907,7 +2059,8 @@ p span {
     border: 3px solid #3B65AF;
     margin-top: 100px;
 }
-.form-inner-title{
+
+.form-inner-title {
     color: #3B65AF;
     font-family: 'Audiowide', sans-serif;
     font-size: 30px;
@@ -1917,7 +2070,8 @@ p span {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.build-tool-heading{
+
+.build-tool-heading {
     color: #F2F2F2;
     font-family: 'Audiowide', sans-serif;
     font-size: 30px;
@@ -1926,6 +2080,7 @@ p span {
     line-height: 40px;
     text-transform: uppercase;
 }
+
 .build-tool button {
     display: block !important;
     margin: 80px auto 0;
@@ -1941,15 +2096,18 @@ p span {
     border-radius: 50px !important;
     padding: 20px 30px !important;
 }
-.build-tool button:hover{
+
+.build-tool button:hover {
     background: #3B65AF !important;
     color: #fff !important;
 }
+
 .build-tool button:after {
     content: "\f061";
     margin-left: 10px;
     font-family: 'FontAwesome';
 }
+
 .utm-social-img {
     width: 36px;
     height: 36px;
@@ -1957,30 +2115,35 @@ p span {
     border: 1px solid #F2F2F2;
     border-radius: 50%;
 }
-.utm-social-img:hover{
+
+.utm-social-img:hover {
     background: #3B65AF;
     border: 1px solid #3B65AF;
     cursor: pointer;
 }
+
 .utm-social-share ul {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 .utm-description-text {
     margin: 80px 0;
 }
-.utm-parameter h4{
+
+.utm-parameter h4 {
     color: #3B65AF;
     font-family: 'Audiowide', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; 
+    line-height: 34px;
     text-transform: uppercase;
     margin: 40px 0;
 }
-.utm-parameter h4:first-child{
+
+.utm-parameter h4:first-child {
     margin-top: 0px;
 }
 
@@ -2007,6 +2170,7 @@ p span {
         width: 45%;
         margin-top: 120px;
     }
+
     .contact-list {
         border-radius: 10px 0px 0px 10px;
         position: absolute;
@@ -2047,7 +2211,8 @@ p span {
         width: 45%;
         margin-bottom: 120px;
     }
-    .benefit-img{
+
+    .benefit-img {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -2080,11 +2245,13 @@ p span {
     .page-content .wp-block-spacer {
         height: 40px !important;
     }
-    .benefit-list h4{
+
+    .benefit-list h4 {
         padding: 20px 0;
         font-size: 18px;
         left: 28px;
     }
+
     .blog-content-wrap .blog-post {
         margin-bottom: 20px;
     }
@@ -2168,9 +2335,11 @@ p span {
     .pb-60 {
         padding-bottom: 40px;
     }
+
     .pb-10 {
         padding-bottom: 30px;
     }
+
     .sm\:container {
         max-width: 1024px;
     }
@@ -2204,66 +2373,83 @@ p span {
 }
 
 @media only screen and (max-width: 991px) {
-    .affiliate-account input, 
-    .affiliate-account input:focus, 
-    .affiliate-account textarea, 
+    .footer-menu {
+        width: 49%;
+    }
+
+    .affiliate-account input,
+    .affiliate-account input:focus,
+    .affiliate-account textarea,
     .affiliate-account textarea:focus,
-    .build-tool input, 
-    .build-tool input:focus, 
-    .build-tool textarea, 
-    .build-tool textarea:focus  {
+    .build-tool input,
+    .build-tool input:focus,
+    .build-tool textarea,
+    .build-tool textarea:focus {
         padding-bottom: 20px !important;
         font-size: 20px !important;
         line-height: 30px !important;
     }
-    .utm-parameter h4{
+
+    .utm-parameter h4 {
         font-size: 20px;
         line-height: 30px;
     }
+
     .affiliate-account .ff-el-form-check {
         margin-top: 20px;
     }
+
     .utm-social-share ul {
         gap: 20px;
     }
+
     .utm-description-text {
         margin: 40px 0;
     }
-    .form-inner-title{
+
+    .form-inner-title {
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 20px;
     }
-    .build-tool-heading{
+
+    .build-tool-heading {
         font-size: 22px;
         line-height: 32px;
     }
-    .affiliate-account label span{
+
+    .affiliate-account label span {
         font-size: 18px;
         line-height: 28px;
     }
+
     .affiliate-account button {
         font-size: 20px !important;
         line-height: 30px !important;
         margin: 40px auto 0;
         padding: 10px 30px !important;
     }
+
     .affiliate-form-wrap,
     .utm-url-form-wrap {
         padding: 20px;
         margin-top: 40px;
     }
-    .become-affiliate-row{
-        margin-top:0;
+
+    .become-affiliate-row {
+        margin-top: 0;
     }
-    .benefit-title{
+
+    .benefit-title {
         font-size: 24px;
         line-height: 34px;
         margin-top: 20px;
     }
+
     .uiux-process-wrapper {
         flex-direction: row !important;
     }
+
     .service-feature-img-wrapper img {
         position: unset;
         height: auto;
@@ -2350,7 +2536,7 @@ p span {
     }
 
     .our-mission-img,
-    .company-logo-img  {
+    .company-logo-img {
         position: unset;
         width: 100%;
         margin-bottom: 20px;
@@ -2360,20 +2546,68 @@ p span {
 }
 
 @media only screen and (max-width: 768px) {
-    .utm-parameter h4{
+    .subscribe-form input{
+        font-size: 20px;
+    }
+    .footer-copyright {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .bottom-footer-logos {
+        height: 72px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .footer-nav,
+    .footer-nav a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-social-list.social-list {
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .privacy-menu-list {
+        justify-content: center;
+    }
+
+    .footer-copyright-info,
+    .privacy-terms-menu a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-menu {
+        width: 100%;
+    }
+
+    .utm-parameter h4 {
         font-size: 18px;
         line-height: 28px;
         margin: 20px 0;
     }
+
     .utm-social-share ul {
         gap: 10px;
     }
+
     .utm-description-text {
         margin: 20px 0;
     }
+
     .case-study-cat-detail {
         padding: 40px 0;
     }
+
     .uiux-process-block {
         width: 100%;
     }
@@ -2484,6 +2718,7 @@ p span {
     .pb-60 {
         padding-bottom: 20px;
     }
+
     .pb-10 {
         padding-bottom: 15px;
     }

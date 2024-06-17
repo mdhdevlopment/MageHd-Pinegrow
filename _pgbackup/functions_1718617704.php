@@ -107,19 +107,6 @@ function mage_hd_theme_init() {
      */
     /* Pinegrow generated Custom Post Types Begin */
 
-    register_post_type('newsletter', array(
-        'labels' => 
-            array(
-                'name' => __( 'Subscribe Newsletter', 'mage_hd_theme' ),
-                'singular_name' => __( 'Subscribe Newsletter', 'mage_hd_theme' )
-            ),
-        'public' => false,
-        'supports' => array( 'title', 'editor', 'author' ),
-        'show_in_rest' => false,
-        'show_ui' => true,
-        'show_in_menu' => true
-    ));
-
     /* Pinegrow generated Custom Post Types End */
     
     /*
