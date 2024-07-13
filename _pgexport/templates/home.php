@@ -18,7 +18,7 @@
             </div>                 
         </div>             
     </div>         
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-eclipse-left.svg" class="cirle-left"> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-eclipse-left.svg" alt="cirle-left" class="cirle-left"> 
 </section>     
 <section class="home-video-section py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container video-container"> 
@@ -66,11 +66,11 @@
                 </div>                     
             </div>                 
             <div class="sm:w-12/12 md:w-6/12"> 
-                <img class="result-driven-img" alt="" src="<?php echo PG_Image::getUrl( get_field( 'result_driven_service_image' ), 'large' ) ?>"/> 
+                <img class="result-driven-img" alt="result-driven-img" src="<?php echo PG_Image::getUrl( get_field( 'result_driven_service_image' ), 'large' ) ?>"/> 
             </div>                 
         </div>             
     </div>         
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left" alt="cirle-left"> 
 </section>     
 <section class="digitalservices py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
@@ -111,7 +111,7 @@
             </div>                 
         </div>             
         <div class="sm:w-12/12 md:w-6/12"> 
-            <img class="digital-img" alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/digital-img.svg"/> 
+            <img class="digital-img" alt="digital-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/digital-img.svg"/> 
         </div>             
     </div>         
 </section>     
@@ -129,8 +129,8 @@
                 <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clucth-tampa.svg"/> 
             </div>                 
         </div>             
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left" alt="cirle-left"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right" alt="cirle-right"> 
     </div>         
 </section>     
 <section class="why-us-section py-120"> 
@@ -252,7 +252,7 @@
                     </div>                         
                     <div class="testimonial-list"> 
                         <div class="quote-warp"> 
-                            <img class="quote-icon" alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/quote.svg"/> 
+                            <img class="quote-icon" alt="quote-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/quote.svg"/> 
                         </div>                             
                         <div class="testimonial-comment large-content-text">
                             <?php the_content(); ?>
@@ -269,8 +269,8 @@
             <p><?php _e( 'Sorry, no posts matched your criteria.', 'mage_hd_theme' ); ?></p>
         <?php endif; ?> 
     </div>         
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right"> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left" alt="cirle-left"> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-right.svg" class="cirle-right" alt="cirle-right"> 
 </section>     
 <section class="contact-us-before-footer py-120 border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 

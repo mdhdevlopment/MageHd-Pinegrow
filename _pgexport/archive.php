@@ -39,17 +39,17 @@
             </button>                 
         </div>             
         <?php
-            $service_query_args = array(
-                'post_type' => 'service',
+            $post_query_args = array(
+                'post_type' => 'post',
                 'posts_per_page' => 100,
                 'paged' => get_query_var( 'paged' ) ?: 1,
                 'order' => 'ASC',
                 'orderby' => 'name'
             )
         ?>
-        <?php $service_query = new WP_Query( $service_query_args ); ?>
-        <?php if ( $service_query->have_posts() ) : ?>
-            <?php while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+        <?php $post_query = new WP_Query( $post_query_args ); ?>
+        <?php if ( $post_query->have_posts() ) : ?>
+            <?php while ( $post_query->have_posts() ) : $post_query->the_post(); ?>
                 <?php PG_Helper_v2::rememberShownPost(); ?>
                 <div id="post-<?php the_ID(); ?>" <?php post_class( 'project-main-wrap blog-detail flex flex-wrap justify-between gap-5' ); ?>> 
                     <div class="md:w-6/12"> 

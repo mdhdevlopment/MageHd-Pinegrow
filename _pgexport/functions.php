@@ -57,6 +57,8 @@ function mage_hd_theme_setup() {
 
     register_nav_menu(  'mobile_app_development_type', __( 'Mobile App Development by Type', 'mage_hd_theme' )  );
 
+    register_nav_menu(  'ui-ux-by-type', __( 'UI/UX by Type', 'mage_hd_theme' )  );
+
     register_nav_menu(  'privacy-terms', __( 'Privacy & Terms', 'mage_hd_theme' )  );
 
     /* Pinegrow generated Register Menus End */

@@ -703,6 +703,9 @@ select {
     --tw-backdrop-saturate: ;
     --tw-backdrop-sepia: ;
 }
+.ff-default .ff-el-input--label label {
+    display: none !important;
+}
 
 .container {
     width: 100%;
@@ -1715,11 +1718,22 @@ footer {
     margin-top: 80px;
 }
 
+input ,
+input:focus,
+textarea ,
+textarea:focus {
+    background: #00000000 !important;
+    --tw-ring-color: #fff0 !important;
+    border: none !important;
+    border-bottom: 1px solid #F2F2F2 !important;
+    border-radius: 0 !important;
+}
 .your-project input ,
 .your-project input:focus,
 .your-project textarea ,
 .your-project textarea:focus {
     background: #00000000 !important;
+    --tw-ring-color: #fff0 !important;
     border: none !important;
     border-bottom: 1px solid #F2F2F2 !important;
     border-radius: 0 !important;

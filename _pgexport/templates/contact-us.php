@@ -17,7 +17,7 @@
             </div>                 
         </div>             
     </div>         
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-eclipse-left.svg" class="cirle-left"> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-eclipse-left.svg" alt="cirle-left" class="cirle-left" loading="lazy"> 
 </section>     
 <section class="your-project py-120 border-y border-#F2F2F2 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
@@ -39,16 +39,16 @@
                             <?php echo get_theme_mod( 'contact_info_email', __( 'hello@magehd.com', 'mage_hd_theme' ) ); ?>
                         </div>                             
                     </div>                         
-                    <div class="social-list flex gap-4"> <a href="<?php echo get_theme_mod( 'facebook', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="" class="social-icon"></a>
-                        <a href="<?php echo get_theme_mod( 'twitter', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="" class="social-icon"></a>
-                        <a href="<?php echo get_theme_mod( 'linkedin', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg" alt="" class="social-icon"></a>
-                        <a href="<?php echo get_theme_mod( 'instagram', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="" class="social-icon"></a>
+                    <div class="social-list flex gap-4"> <a href="<?php echo get_theme_mod( 'facebook', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook" class="social-icon" loading="lazy"></a>
+                        <a href="<?php echo get_theme_mod( 'twitter', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="twitter" class="social-icon" loading="lazy"></a>
+                        <a href="<?php echo get_theme_mod( 'linkedin', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg" alt="linkedin" loading="lazy" class="social-icon"></a>
+                        <a href="<?php echo get_theme_mod( 'instagram', '#' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram" loading="lazy" class="social-icon"></a>
                     </div>                         
                 </div>                     
             </div>                 
         </div>             
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" class="cirle-left"> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eclipse-left.svg" loading="lazy" alt="eclipse-left" class="cirle-left"> 
 </section>    
 
 <?php get_footer(); ?>
