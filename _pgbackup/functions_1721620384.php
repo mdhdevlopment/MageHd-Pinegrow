@@ -304,53 +304,50 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
 
     wp_register_script( 'inline-script-1', '', [], '1.0.0', true );
     wp_enqueue_script( 'inline-script-1' );
-    wp_add_inline_script( 'inline-script-1', 'document.getElementById(\'page-speed-form\').addEventListener(\'submit\', function (event) {
-                    event.preventDefault();
-                    const url = document.getElementById(\'urlInput\').value;
-                    const apiKey = \'AIzaSyCIq-J9QUOn9_32dtsAZEETXlpkR9085U4\';
-                    const desktopUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=desktop`;
-                    const mobileUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=mobile`;
-
-                    document.getElementById(\'spinner\').style.display = \'block\';
-
-                    Promise.all([fetchPageSpeedData(desktopUrl, \'desktop\'), fetchPageSpeedData(mobileUrl, \'mobile\')])
-                        .then(() => {
-                            //window.location.href = \'http://localhost/magehd/page-speed/\';
-                            window.location.href = \'/page-speed/\';
-                        })
-                        .catch(error => {
-                            console.error(\'Error:\', error);
-                            document.getElementById(\'spinner\').style.display = \'none\';
-                        });
-                });
-
-                function fetchPageSpeedData(apiUrl, strategy) {
-                    return fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
+    wp_add_inline_script( 'inline-script-1', '// document.addEventListener(\'DOMContentLoaded\', function() {
+                    document.getElementById(\'page-speed-form\').addEventListener(\'submit\', function(event) {
+                        event.preventDefault();
+                        const url = document.getElementById(\'urlInput\').value;
+                        const apiKey = \'AIzaSyCIq-J9QUOn9_32dtsAZEETXlpkR9085U4\';
+                        const desktopUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=desktop`;
+                        const mobileUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=mobile`;
+            
+                        Promise.all([fetchPageSpeedData(desktopUrl, \'desktop\'), fetchPageSpeedData(mobileUrl, \'mobile\')])
+                            .then(() => {
+                                 window.location.href = \'http://localhost/magehd/page-speed/\';
+                                //window.location.href = \'/page-speed/\';
+                            })
+                            .catch(error => console.error(\'Error:\', error));
+                    });
+            
+                    function fetchPageSpeedData(apiUrl, strategy) {
+                        return fetch(apiUrl)
+                            .then(response => response.json())
+                            .then(data => {
                             const fullPageImg = data.lighthouseResult.fullPageScreenshot.screenshot[\'data\'];
-                            const performance = data.lighthouseResult.categories.performance.score * 100;
-                            const firstContentfulPaint = data.lighthouseResult.audits[\'first-contentful-paint\'].displayValue;
-                            const speedIndex = data.lighthouseResult.audits[\'speed-index\'].displayValue;
-                            const largestContentfulPaint = data.lighthouseResult.audits[\'largest-contentful-paint\'].displayValue;
-                            const timeToInteractive = data.lighthouseResult.audits[\'interactive\'].displayValue;
-                            const totalBlockingTime = data.lighthouseResult.audits[\'total-blocking-time\'].displayValue;
-                            const cumulativeLayoutShift = data.lighthouseResult.audits[\'cumulative-layout-shift\'].displayValue;
-
-                            const result = {
-                                fullPageImg,
-                                performance,
-                                firstContentfulPaint,
-                                speedIndex,
-                                largestContentfulPaint,
-                                timeToInteractive,
-                                totalBlockingTime,
-                                cumulativeLayoutShift
-                            };
-
-                            localStorage.setItem(strategy, JSON.stringify(result));
-                        });
-                }');
+                                const performance = data.lighthouseResult.categories.performance.score * 100;
+                                const firstContentfulPaint = data.lighthouseResult.audits[\'first-contentful-paint\'].displayValue;
+                                const speedIndex = data.lighthouseResult.audits[\'speed-index\'].displayValue;
+                                const largestContentfulPaint = data.lighthouseResult.audits[\'largest-contentful-paint\'].displayValue;
+                                const timeToInteractive = data.lighthouseResult.audits[\'interactive\'].displayValue;
+                                const totalBlockingTime = data.lighthouseResult.audits[\'total-blocking-time\'].displayValue;
+                                const cumulativeLayoutShift = data.lighthouseResult.audits[\'cumulative-layout-shift\'].displayValue;
+            
+                                const result = {
+                                    fullPageImg,
+                                    performance,
+                                    firstContentfulPaint,
+                                    speedIndex,
+                                    largestContentfulPaint,
+                                    timeToInteractive,
+                                    totalBlockingTime,
+                                    cumulativeLayoutShift
+                                };
+            
+                                localStorage.setItem(strategy, JSON.stringify(result));
+                            });
+                    }
+                //});');
 
     wp_deregister_script( 'mage_hd_theme-chart' );
     wp_enqueue_script( 'mage_hd_theme-chart', 'https://cdn.jsdelivr.net/npm/chart.js', [], '1.0.0', true);
@@ -422,75 +419,35 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
       }
     });
 
-    document.addEventListener(\'DOMContentLoaded\', function() {
-      const textValue = document.querySelector(\'.chart-text\');
-
-      let value = parseFloat(textValue.textContent).toFixed(0);
-      textValue.textContent = value;
-    });
     function generateResultHtml(data, chartId1, chartId2, chartTextId1, chartTextId2) {
       return `
-              <div class="flex performance-chart">
-                <div class="chart-content-wrap sm:w-12/12 md:w-6/12">
-                  <div class="chart-container">
-                    <div class="performace-chart-wrpper">
-                      <canvas id="${chartId1}" class="performace-chart"></canvas>
-                      <div class="chart-text" id="${chartTextId1}"></div>
-                    </div>
-                    <h3>Performance</h3>
-                    <h5>Values are estimated and may vary. The performance score is calculated directly from these metrics.See calculator.</h5>
-                    <div class="chart-color-info">
-                      <div class="gray-dot-icon">0-49</div>
-                      <div class="orange-dot-icon">50-80</div>
-                      <div class="blue-dot-icon">90-100</div>
-                    </div>
+                <div class="chart-container">
+                    <canvas id="${chartId1}"></canvas>
+                    <div class="chart-text" id="${chartTextId1}"></div>
+                </div>
+                <h3>Performance</h3>
+                <h5>Values are estimated and may vary. The performance score is calculated directly from these metrics.See calculator.</h5>
+                <div class="chart-color-info">
+                    <div class="gray-dot-icon">0-49</div>
+                    <div class="orange-dot-icon">50-80</div>
+                    <div class="blue-dot-icon">90-100</div>
                   </div>
-                </div>
-                <div class="page-ss sm:w-12/12 md:w-6/12"> 
-                  <img src="${data.fullPageImg}" alt="Full Page" class="full-page-img">
-                </div>
-              </div>
-
+                <img src="${data.fullPageImg}" alt="Full Page" class="full-page-img">
                 <div class="scores-wrapper">
-                  <div class="score-list">
-                    <div class="chart-container">
-                      <canvas id="${chartId2}"></canvas>
-                      <div class="chart-text" id="${chartTextId2}"></div>
-                    </div>
-                    <h4>Performance</h4>
+                  <div class="chart-container">
+                    <canvas id="${chartId2}"></canvas>
+                    <div class="chart-text" id="${chartTextId2}"></div>
                   </div>
-                    <div class="score-list">
-                    <div class="chart-container">
-                      <canvas id="${chartId2}"></canvas>
-                      <div class="chart-text" id="${chartTextId2}"></div>
-                    </div>
-                    <h4>Accessibility</h4>
-                  </div>
-                    <div class="score-list">
-                    <div class="chart-container">
-                      <canvas id="${chartId2}"></canvas>
-                      <div class="chart-text" id="${chartTextId2}"></div>
-                    </div>
-                    <h4>Best Practice</h4>
-                  </div>
-                    <div class="score-list">
-                    <div class="chart-container">
-                      <canvas id="${chartId2}"></canvas>
-                      <div class="chart-text" id="${chartTextId2}"></div>
-                    </div>
-                    <h4>Performance</h4>
-                  </div>
+                  <h4>Performance</h4>
                 </div>
-
-
                 <div class="metric-wrapper">
-                  <h3>Metrics</h3>
+                  <h3>Metrics</h5>
                    <div class="metric-list">
                     <div class="metric first-contentful-paint">
                       <div class="metric-dot">
                       </div>
                       <div class="metric-info">
-                        <h4>First Contentful Paint</h4>
+                        <h3>First Contentful Paint</h3>
                         <p id="first-contentful-paint" class="metric-text">${data.firstContentfulPaint}</p>
                         <a href="#" class="speed-read-more">Read</a>
                       </div>
@@ -499,16 +456,16 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
                       <div class="metric-dot">
                       </div>
                       <div class="metric-info">
-                        <h4>Total Blocking Time</h4>
+                        <h3>Total Blocking Time</h3>
                         <p id="total-blocking-time" class="metric-text">${data.totalBlockingTime}</p>
                         <a href="#" class="speed-read-more">Read</a>
                       </div>
                     </div>
                     <div class="metric speed-index">
-                      <div class="metric-dot">
+                      <div class="metric-dot>
                       </div>
                       <div class="metric-info">
-                        <h4>Speed Index</h4>
+                        <h3>Speed Index</h3>
                         <p id="speed-index" class="metric-text">${data.speedIndex}</p>
                         <a href="#" class="speed-read-more">Read</a>
                       </div>
@@ -517,7 +474,7 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
                       <div class="metric-dot">
                       </div>
                       <div class="metric-info">
-                        <h4>Largest Contentful Paint</h4>
+                        <h3>Largest Contentful Paint</h3>
                         <p id="largest-contentful-paint" class="metric-text">${data.largestContentfulPaint}</p>
                         <a href="#" class="speed-read-more">Read</a>
                       </div>
@@ -526,17 +483,12 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
                       <div class="metric-dot">
                       </div>
                       <div class="metric-info">
-                        <h4>Cumulative Layout Shift</h4>
+                        <h3>Cumulative Layout Shift</h3>
                         <p id="cumulative-layout-shift" class="metric-text">${data.cumulativeLayoutShift}</p>
                         <a href="#" class="speed-read-more">Read</a>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="get-help-issue">
-                  <p>Get help to resolve your issue</p>
-                  <a href="/contact-us/" class="blue-btn"> <span>Get Start</span> <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             `;
     }

@@ -315,8 +315,8 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
 
                     Promise.all([fetchPageSpeedData(desktopUrl, \'desktop\'), fetchPageSpeedData(mobileUrl, \'mobile\')])
                         .then(() => {
-                            //window.location.href = \'http://localhost/magehd/page-speed/\';
-                            window.location.href = \'/page-speed/\';
+                            window.location.href = \'http://localhost/magehd/page-speed/\';
+                            //window.location.href = \'/page-speed/\';
                         })
                         .catch(error => {
                             console.error(\'Error:\', error);

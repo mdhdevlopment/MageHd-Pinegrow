@@ -81,9 +81,7 @@ hr {
 
     /* 3 */
 }
-a {
-    text-decoration: none !important;
-}
+
 /* Add the correct text decoration in Chrome, Edge, and Safari. */
 abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
@@ -1152,7 +1150,6 @@ html {
     border-radius: 50px;
     border-color: #3b65af;
     padding: 25px 30px;
-    text-decoration: none;
 }
 
 .blue-btn:hover {
@@ -2182,7 +2179,7 @@ textarea:focus {
     font-weight: 400;
 }
 
-.full-page-img {
+#desktopResult .full-page-img {
     width: 500px;
     height: 289px;
     object-fit: cover;
@@ -2196,7 +2193,6 @@ textarea:focus {
     height: 450px;
     object-fit: cover;
     object-position: top;
-    float: right;
 }
 
 /* .chart-container {
@@ -2259,7 +2255,6 @@ textarea:focus {
     line-height: 30px;
     font-family: 'Questrial', sans-serif;
     font-weight: 500;
-    text-align: center;
 }
 
 .gray-dot-icon:before,
@@ -2331,10 +2326,7 @@ textarea:focus {
 .performance-chart {
     padding: 80px 0;
     border-bottom: 1px solid #fff;
-    align-items: center;
-    gap: 40px;
 }
-
 .scores-wrapper {
     display: flex;
     align-items: flex-end;
@@ -2434,56 +2426,24 @@ textarea:focus {
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .metric {
     width: 32%;
     margin-bottom: 60px;
-    display: flex;
 }
-
 .metric:nth-child(4),
 .metric:nth-child(5) {
     margin-bottom: 0;
 }
-
 .metric-wrapper {
     border-bottom: 1px solid #fff;
     padding: 80px 0;
 }
-
-.get-help-issue p {
-    color: #F2F2F2;
+.get-help-issue p{
+    color: #fff;
     font-family: 'Questrial', sans-serif;
     font-weight: 500;
     font-size: 26px;
     line-height: 36px;
-    text-align: center;
-}
-.get-help-issue {
-    padding: 80px 0 150px;
-}
-.get-help-issue .blue-btn {
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    width: fit-content;
-    margin-top: 36px;
-}
-.page-ss {
-    border-left: 1px solid #F2F2F2;
-    padding-left: 40px;
-}
-.chart-content-wrap {
-    padding-right: 40px;
-}
-#page-speed-form #spinner{
-    color: #3B65AF;
-    font-family: 'Questrial', sans-serif;
-    font-size: 26px;
-    line-height: 36px;
-    text-align: center;
-    margin-top: 30px;
-    display: none;
 }
 @media only screen and (max-width: 1536px) {
     .webservice-wrapper,
@@ -2892,8 +2852,7 @@ textarea:focus {
         margin-top: 40px;
     }
 
-    .subscribe-form input,
-    .speed-test-form-warpper input{
+    .subscribe-form input {
         font-size: 20px;
     }
 

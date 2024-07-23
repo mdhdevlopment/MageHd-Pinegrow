@@ -1,5 +1,5 @@
 <html wp-template wp-template-export-as="home.php" wp-template-post-template wp-template-post-template-name="Home" wp-site-content> 
-    <section class="home-banner hero-banner" data-pg-collapsed> 
+    <section class="home-banner hero-banner"> 
         <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
             <div class="flex"> 
                 <div class="w-10/12"> 
@@ -20,12 +20,12 @@
         </div>         
         <img src="assets/images/banner-eclipse-left.svg" alt="cirle-left" class="cirle-left"> 
     </section>     
-    <section class="home-video-section py-120" data-pg-collapsed> 
+    <section class="home-video-section py-120"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container video-container"> 
             <iframe title="Dummy Video For Website" width="992" height="650" src="https://www.youtube.com/embed/D0UnqGm_miA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" wp-acf-get-field-5="feature_video" wp-acf-get-field-5-set="src"></iframe>             
         </div>         
     </section>     
-    <section class="featured py-120" data-pgc-section="We Featured IN" data-pgc-define="We Featured IN" data-pg-collapsed> 
+    <section class="featured py-120" data-pgc-section="We Featured IN" data-pgc-define="We Featured IN"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container featured-container"> 
             <h3 class="large-inner-heading text-center">We Featured IN</h3> 
             <div class="featured-list"> 
@@ -35,7 +35,7 @@
             </div>             
         </div>         
     </section>     
-    <section class="result-driven py-120 relative" data-pgc-section="result-service" data-pgc-define="result-driven-service" data-pgc-define-name="Result  Driven Service" data-pg-collapsed> 
+    <section class="result-driven py-120 relative" data-pgc-section="result-service" data-pgc-define="result-driven-service" data-pgc-define-name="Result  Driven Service"> 
         <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
             <div class="flex flex-row sm:flex result-driven-row"> 
                 <div class="sm:w-12/12 md:w-6/12"> 
@@ -57,7 +57,7 @@
         </div>         
         <img src="assets/images/eclipse-left.svg" class="cirle-left" alt="cirle-left"> 
     </section>     
-    <section class="digitalservices py-120" data-pg-collapsed> 
+    <section class="digitalservices py-120"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center pb-60">Digital Marketing Services</h3> 
             <div class="large-content-text text-center" wp-category-description="217,1" wp-category-description-set="content"> 
@@ -92,7 +92,7 @@
             </div>             
         </div>         
     </section>     
-    <section class="recog-section py-120 relative" data-pgc-section="Our recognitions" data-pgc-define="our-recognitions" data-pgc-define-name="Our recognitions" data-pg-collapsed> 
+    <section class="recog-section py-120 relative" data-pgc-section="Our recognitions" data-pgc-define="our-recognitions" data-pgc-define-name="Our recognitions"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center"> Our recognitions </h3> 
             <div class="recog-list"> 
@@ -110,7 +110,7 @@
             <img src="assets/images/eclipse-right.svg" class="cirle-right" alt="cirle-right"> 
         </div>         
     </section>     
-    <section class="why-us-section py-120" data-pgc-define="why-us" data-pgc-define-name="Why Us" data-pgc-section="Why Us" data-pg-collapsed> 
+    <section class="why-us-section py-120"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center pb-60" wp-acf-get-field="why_magehd_title">why mage h.d.</h3> 
             <div class="large-content-text text-center" wp-acf-get-field="why_magehd_content"> 
@@ -130,7 +130,7 @@
             <iframe title="Dummy Video For Website" width="992" height="650" src="https://www.youtube.com/embed/D0UnqGm_miA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" wp-acf-get-field-5="why_magehd_video" wp-acf-get-field-5-set="src"></iframe>             
         </div>         
     </section>     
-    <section class="web-design py-120" data-pg-collapsed> 
+    <section class="web-design py-120"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center pb-60">Web Design & Development Services</h3> 
             <div class="large-content-text text-center" wp-category-description="218,6" wp-category-description-set="content"> 
@@ -151,7 +151,7 @@
             </div>             
         </div>         
     </section>     
-    <section class="project py-120" data-pgc-section="CHECK OUT OR RECENT WEBSITE PROJECTS" data-pgc-define="website-project" data-pgc-define-name="CHECK OUT OR RECENT WEBSITE PROJECTS"> 
+    <section class="project py-120"> 
         <div class="max-w-[90vw] mx-auto w-full lg:container"> 
             <h3 class="large-inner-heading text-center">Check out or recent website projects</h3> 
             <div class="blog-category py-120"> 
@@ -251,58 +251,6 @@
                         <i class="fa fa-long-arrow-right"></i>
                     </button>
                 </div>
-                <div id="spinner">
-                    <i class="fa fa-spinner fa-spin"></i> Please Wait...
-                </div>
             </form>
-            <script>
-                document.getElementById('page-speed-form').addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    const url = document.getElementById('urlInput').value;
-                    const apiKey = 'AIzaSyCIq-J9QUOn9_32dtsAZEETXlpkR9085U4';
-                    const desktopUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=desktop`;
-                    const mobileUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=mobile`;
-
-                    document.getElementById('spinner').style.display = 'block';
-
-                    Promise.all([fetchPageSpeedData(desktopUrl, 'desktop'), fetchPageSpeedData(mobileUrl, 'mobile')])
-                        .then(() => {
-                            //window.location.href = 'http://localhost/magehd/page-speed/';
-                            window.location.href = '/page-speed/';
-                        })
-                        .catch(error => {
-                            console.error('Error:', error);
-                            document.getElementById('spinner').style.display = 'none';
-                        });
-                });
-
-                function fetchPageSpeedData(apiUrl, strategy) {
-                    return fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            const fullPageImg = data.lighthouseResult.fullPageScreenshot.screenshot['data'];
-                            const performance = data.lighthouseResult.categories.performance.score * 100;
-                            const firstContentfulPaint = data.lighthouseResult.audits['first-contentful-paint'].displayValue;
-                            const speedIndex = data.lighthouseResult.audits['speed-index'].displayValue;
-                            const largestContentfulPaint = data.lighthouseResult.audits['largest-contentful-paint'].displayValue;
-                            const timeToInteractive = data.lighthouseResult.audits['interactive'].displayValue;
-                            const totalBlockingTime = data.lighthouseResult.audits['total-blocking-time'].displayValue;
-                            const cumulativeLayoutShift = data.lighthouseResult.audits['cumulative-layout-shift'].displayValue;
-
-                            const result = {
-                                fullPageImg,
-                                performance,
-                                firstContentfulPaint,
-                                speedIndex,
-                                largestContentfulPaint,
-                                timeToInteractive,
-                                totalBlockingTime,
-                                cumulativeLayoutShift
-                            };
-
-                            localStorage.setItem(strategy, JSON.stringify(result));
-                        });
-                }
-            </script>
         </div>
     </section>

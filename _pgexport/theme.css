@@ -81,7 +81,9 @@ hr {
 
     /* 3 */
 }
-
+a {
+    text-decoration: none !important;
+}
 /* Add the correct text decoration in Chrome, Edge, and Safari. */
 abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
@@ -436,7 +438,6 @@ select:focus {
     --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
-
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -703,6 +704,7 @@ select {
     --tw-backdrop-saturate: ;
     --tw-backdrop-sepia: ;
 }
+
 .ff-default .ff-el-input--label label {
     display: none !important;
 }
@@ -1150,6 +1152,7 @@ html {
     border-radius: 50px;
     border-color: #3b65af;
     padding: 25px 30px;
+    text-decoration: none;
 }
 
 .blue-btn:hover {
@@ -1253,7 +1256,8 @@ p span {
 }
 
 /* footer */
-.subscribe-form input {
+.subscribe-form input,
+.test-diagnosis input {
     color: #F2F2F2;
     font-family: 'Questrial', sans-serif;
     font-size: 26px;
@@ -1264,11 +1268,13 @@ p span {
     border-bottom: 1px solid #F2F2F2;
     background: #00000000;
 }
+
 .subscribe-form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .subscribe-btn {
     color: #fff;
     font-size: 30px;
@@ -1728,6 +1734,7 @@ textarea:focus {
     border-bottom: 1px solid #F2F2F2 !important;
     border-radius: 0 !important;
 }
+
 .your-project input ,
 .your-project input:focus,
 .your-project textarea ,
@@ -2161,6 +2168,323 @@ textarea:focus {
     margin-top: 0px;
 }
 
+/* Page speed test */
+.speed-test-form-warpper {
+    display: flex;
+    justify-content: center;
+}
+
+.speed-test-form-warpper input {
+    font-family: 'Questrial', sans-serif;
+    color: #F2F2F2;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.full-page-img {
+    width: 500px;
+    height: 289px;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid #3B65AF;
+    border-radius: 8px;
+}
+
+#mobileResult .full-page-img {
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+    float: right;
+}
+
+/* .chart-container {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+  } */
+.chart-container .chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.speed-view-btn {
+    background: #000;
+    border: 2px solid #3B65AF;
+    color: #fff;
+    border-radius: 50px;
+    padding: 14px 26px;
+    cursor: pointer;
+}
+
+.speed-view-btn.active,
+.speed-view-btn:hover {
+    background: #FF5622;
+    border: 2px solid #FF5622;
+}
+
+.speed-view-btn-warpper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chart-color-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.gray-dot-icon,
+.orange-dot-icon,
+.blue-dot-icon {
+    position: relative;
+    color: #F2F2F2;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+}
+
+.performance-chart h5 {
+    color: #F2F2F2;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.gray-dot-icon:before,
+.orange-dot-icon:before,
+.blue-dot-icon:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.gray-dot-icon:before {
+    background: #666666;
+}
+
+.orange-dot-icon:before {
+    background: #FF5622;
+}
+
+.blue-dot-icon:before {
+    background: #3B65AF;
+}
+
+.metric-dot {
+    position: relative;
+}
+
+.metric-dot:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.blue-text {
+    color: #3B65AF;
+}
+
+.orange-text {
+    color: #FF5622;
+}
+
+.gray-text {
+    color: #666666;
+}
+
+.speed-content-section {
+    margin-top: 150px;
+}
+
+.performance-chart .chart-text {
+    color: #3B65AF;
+    font-family: "Audiowide", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.scores-wrapper .chart-container {
+    position: relative;
+    height: 200px;
+}
+
+.performance-chart {
+    padding: 80px 0;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+    gap: 40px;
+}
+
+.scores-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 0;
+}
+
+.scores-wrapper h4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.score-list {
+    width: 14%;
+}
+
+.scores-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px;
+}
+
+.scores-wrapper .chart-text {
+    color: #3B65AF;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.performace-chart-wrpper {
+    position: relative;
+}
+
+.performance-chart h3 {
+    color: #3B65AF;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px auto 30px;
+}
+
+.metric-wrapper h3 {
+    color: #3B65AF;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.metric-info h4 {
+    color: #F2F2F2;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.metric-info p {
+    color: #3B65AF;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.metric-info a {
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.metric-info a:hover {
+    color: #3B65AF;
+}
+
+.metric-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric {
+    width: 32%;
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.metric:nth-child(4),
+.metric:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.metric-wrapper {
+    border-bottom: 1px solid #fff;
+    padding: 80px 0;
+}
+
+.get-help-issue p {
+    color: #F2F2F2;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+}
+.get-help-issue {
+    padding: 80px 0 150px;
+}
+.get-help-issue .blue-btn {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-top: 36px;
+}
+.page-ss {
+    border-left: 1px solid #F2F2F2;
+    padding-left: 40px;
+}
+.chart-content-wrap {
+    padding-right: 40px;
+}
+#page-speed-form #spinner{
+    color: #3B65AF;
+    font-family: 'Questrial', sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
 @media only screen and (max-width: 1536px) {
     .webservice-wrapper,
     .testimonial-wrapper {
@@ -2391,6 +2715,10 @@ textarea:focus {
         width: 49%;
     }
 
+    .speed-content-section {
+        margin-top: 80px;
+    }
+
     .affiliate-account input,
     .affiliate-account input:focus,
     .affiliate-account textarea,
@@ -2560,9 +2888,15 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 768px) {
-    .subscribe-form input{
+    .speed-content-section {
+        margin-top: 40px;
+    }
+
+    .subscribe-form input,
+    .speed-test-form-warpper input{
         font-size: 20px;
     }
+
     .footer-copyright {
         display: block;
         text-align: center;

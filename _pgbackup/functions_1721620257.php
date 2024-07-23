@@ -304,68 +304,67 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
 
     wp_register_script( 'inline-script-1', '', [], '1.0.0', true );
     wp_enqueue_script( 'inline-script-1' );
-    wp_add_inline_script( 'inline-script-1', 'document.getElementById(\'page-speed-form\').addEventListener(\'submit\', function (event) {
-                    event.preventDefault();
-                    const url = document.getElementById(\'urlInput\').value;
-                    const apiKey = \'AIzaSyCIq-J9QUOn9_32dtsAZEETXlpkR9085U4\';
-                    const desktopUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=desktop`;
-                    const mobileUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=mobile`;
-
-                    document.getElementById(\'spinner\').style.display = \'block\';
-
-                    Promise.all([fetchPageSpeedData(desktopUrl, \'desktop\'), fetchPageSpeedData(mobileUrl, \'mobile\')])
-                        .then(() => {
-                            //window.location.href = \'http://localhost/magehd/page-speed/\';
-                            window.location.href = \'/page-speed/\';
-                        })
-                        .catch(error => {
-                            console.error(\'Error:\', error);
-                            document.getElementById(\'spinner\').style.display = \'none\';
-                        });
-                });
-
-                function fetchPageSpeedData(apiUrl, strategy) {
-                    return fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
+    wp_add_inline_script( 'inline-script-1', '// document.addEventListener(\'DOMContentLoaded\', function() {
+                    document.getElementById(\'page-speed-form\').addEventListener(\'submit\', function(event) {
+                        event.preventDefault();
+                        const url = document.getElementById(\'urlInput\').value;
+                        const apiKey = \'AIzaSyCIq-J9QUOn9_32dtsAZEETXlpkR9085U4\';
+                        const desktopUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=desktop`;
+                        const mobileUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&key=${apiKey}&strategy=mobile`;
+            
+                        Promise.all([fetchPageSpeedData(desktopUrl, \'desktop\'), fetchPageSpeedData(mobileUrl, \'mobile\')])
+                            .then(() => {
+                                 window.location.href = \'http://localhost/magehd/page-speed/\';
+                                //window.location.href = \'/page-speed/\';
+                            })
+                            .catch(error => console.error(\'Error:\', error));
+                    });
+            
+                    function fetchPageSpeedData(apiUrl, strategy) {
+                        return fetch(apiUrl)
+                            .then(response => response.json())
+                            .then(data => {
                             const fullPageImg = data.lighthouseResult.fullPageScreenshot.screenshot[\'data\'];
-                            const performance = data.lighthouseResult.categories.performance.score * 100;
-                            const firstContentfulPaint = data.lighthouseResult.audits[\'first-contentful-paint\'].displayValue;
-                            const speedIndex = data.lighthouseResult.audits[\'speed-index\'].displayValue;
-                            const largestContentfulPaint = data.lighthouseResult.audits[\'largest-contentful-paint\'].displayValue;
-                            const timeToInteractive = data.lighthouseResult.audits[\'interactive\'].displayValue;
-                            const totalBlockingTime = data.lighthouseResult.audits[\'total-blocking-time\'].displayValue;
-                            const cumulativeLayoutShift = data.lighthouseResult.audits[\'cumulative-layout-shift\'].displayValue;
-
-                            const result = {
-                                fullPageImg,
-                                performance,
-                                firstContentfulPaint,
-                                speedIndex,
-                                largestContentfulPaint,
-                                timeToInteractive,
-                                totalBlockingTime,
-                                cumulativeLayoutShift
-                            };
-
-                            localStorage.setItem(strategy, JSON.stringify(result));
-                        });
-                }');
+                                const performance = data.lighthouseResult.categories.performance.score * 100;
+                                const firstContentfulPaint = data.lighthouseResult.audits[\'first-contentful-paint\'].displayValue;
+                                const speedIndex = data.lighthouseResult.audits[\'speed-index\'].displayValue;
+                                const largestContentfulPaint = data.lighthouseResult.audits[\'largest-contentful-paint\'].displayValue;
+                                const timeToInteractive = data.lighthouseResult.audits[\'interactive\'].displayValue;
+                                const totalBlockingTime = data.lighthouseResult.audits[\'total-blocking-time\'].displayValue;
+                                const cumulativeLayoutShift = data.lighthouseResult.audits[\'cumulative-layout-shift\'].displayValue;
+            
+                                const result = {
+                                    fullPageImg,
+                                    performance,
+                                    firstContentfulPaint,
+                                    speedIndex,
+                                    largestContentfulPaint,
+                                    timeToInteractive,
+                                    totalBlockingTime,
+                                    cumulativeLayoutShift
+                                };
+            
+                                localStorage.setItem(strategy, JSON.stringify(result));
+                            });
+                    }
+                //});');
 
     wp_deregister_script( 'mage_hd_theme-chart' );
     wp_enqueue_script( 'mage_hd_theme-chart', 'https://cdn.jsdelivr.net/npm/chart.js', [], '1.0.0', true);
 
     wp_register_script( 'inline-script-2', '', [], '1.0.0', true );
     wp_enqueue_script( 'inline-script-2' );
-    wp_add_inline_script( 'inline-script-2', '$(\'.mobile-content.speed-content\').hide();
-    $(\'.speed-view-btn\').click(function () {
-      $(\'.speed-view-btn\').removeClass(\'active\');
-      $(this).addClass(\'active\');
-      const btnActiveId = $(\'.speed-view-btn.active\').attr(\'id\');
-      $(\'.speed-content\').hide();
-      $(\'.speed-content#\' + btnActiveId).show();
-    });
-
+    wp_add_inline_script( 'inline-script-2', 'document.addEventListener(\'DOMContentLoaded\', function() {
+        $(\'.mobile-content.speed-content\').hide();
+        $(\'.speed-view-btn\').click(function () {
+          $(\'.speed-view-btn\').removeClass(\'active\');
+          $(this).addClass(\'active\');
+          const btnActiveId = $(\'.speed-view-btn.active\').attr(\'id\');
+          $(\'.speed-content\').hide();
+          $(\'.speed-content#\' + btnActiveId).show();
+        });
+      });
+  // document.addEventListener(\'DOMContentLoaded\', function() {
     function fetchPageSpeedData(apiUrl, strategy) {
       return fetch(apiUrl)
         .then(response => response.json())
@@ -422,12 +421,16 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
       }
     });
 
-    document.addEventListener(\'DOMContentLoaded\', function() {
+    //document.addEventListener(\'DOMContentLoaded\', function() {
       const textValue = document.querySelector(\'.chart-text\');
 
-      let value = parseFloat(textValue.textContent).toFixed(0);
-      textValue.textContent = value;
-    });
+          let value = parseFloat(textValue.textContent).toFixed(0);
+          textValue.textContent = value;
+          console.log(\'Updated textValue:\', textValue);
+      
+    //});
+
+    //document.addEventListener(\'DOMContentLoaded\', function() {
     function generateResultHtml(data, chartId1, chartId2, chartTextId1, chartTextId2) {
       return `
               <div class="flex performance-chart">
@@ -540,7 +543,7 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
                 </div>
             `;
     }
-
+//   });
     // metric dot color
 
     //First Contentful Paint
@@ -563,7 +566,6 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
     //Total Blocking Time
     document.addEventListener(\'DOMContentLoaded\', function () {
       const fcpValue = parseFloat(document.getElementById(\'total-blocking-time\').innerText);
-      console.log(fcpValue);
       const metricDot = document.querySelector(\'.total-blocking-time .metric-dot\');
       const metricText = document.querySelector(\'.total-blocking-time .metric-text\');
       if (fcpValue < 200) {
@@ -629,6 +631,7 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
       }
     });
 
+    document.addEventListener(\'DOMContentLoaded\', function() {
     function createPerformanceChart(chartId, performanceScore, textId) {
       const ctx = document.getElementById(chartId).getContext(\'2d\');
       const chartText = document.getElementById(textId);
@@ -667,7 +670,8 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
           cutout: \'70%\'
         }
       });
-    }');
+    }
+  });');
 
     /* Pinegrow generated Enqueue Scripts End */
 
