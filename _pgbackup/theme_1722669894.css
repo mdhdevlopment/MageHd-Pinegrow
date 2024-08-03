@@ -1039,21 +1039,11 @@ html {
     list-style: disc;
     margin-left: 20px;
 }
-.policy-contact-info {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-}
-.policy-col {
-    width: 33%;
-    display: flex;
-    gap: 10px;
-}
+
 .page-content li::marker {
     color: #3B65AF;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 .page-content .wp-block-spacer {
@@ -1305,7 +1295,7 @@ p span {
 
 .subscribe-btn {
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 52px;
     border-bottom: 1px solid #F2F2F2;
 }
@@ -1513,7 +1503,6 @@ footer {
     display: block;
     margin: 0 auto;
     width: 100%;
-    border-radius: 10px;
 }
 
 .webservice-info .border-btn {
@@ -1589,21 +1578,6 @@ footer {
 .contact-us-before-footer {
     padding-top: 150px;
     padding-bottom: 150px;
-}
-.contact-location:before {
-    content: "\f041";
-    font-family: 'fontawesome';
-    margin-right: 8px;
-}
-.contact-no:before {
-    content: "\f095";
-    font-family: 'fontawesome';
-    margin-right: 8px;
-}
-.contact-email:before {
-    content: "\f0e0";
-    font-family: 'fontawesome';
-    margin-right: 8px;
 }
 
 .blog-section {
@@ -1758,7 +1732,7 @@ footer {
 
 .social-list img {
     width: 30px;
-    height: 27px;
+    height: 30px;
     padding: 5px;
     border: 1px solid #F2F2F2;
     border-radius: 50%;
@@ -1820,7 +1794,7 @@ textarea:focus {
     background: #000000 !important;
     padding: 15px 30px !important;
     margin-top: 100px !important;
-    color: #3B65AF !important;
+    color: #3B65AF;
     font-family: 'Questrial', sans-serif !important;
     font-size: 26px !important;
     font-style: normal;
@@ -2559,31 +2533,46 @@ textarea:focus {
 .result-driven-img {
     border-radius: 10px;
 }
-
-.affiliate-form-wrap input[type="checkbox"] {
-    appearance: none;
+.affiliate-form-wrap .ff-el-form-check span {
+    position: relative;
+    cursor: pointer;
+  }
+  .affiliate-form-wrap .ff-el-form-check input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+.affiliate-form-wrap .ff-el-form-check span:before {
+    content:'';
     -webkit-appearance: none;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 2rem;
-    padding: 0.1rem;
-    border: 0.25rem solid green;
-    border-radius: 0.5rem;
-}
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+.affiliate-form-wrap .ff-el-form-check input:checked + span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
 
-.affiliate-form-wrap input[type="checkbox"]::before {
-    content: "";
-    width: 1.4rem;
-    height: 1.4rem;
-    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-    transform: scale(0);
-    background-color: green;
-}
-
-.affiliate-form-wrap input[type="checkbox"]:checked::before {
-    transform: scale(1);
-}
+  
 
 @media only screen and (max-width: 1536px) {
     .webservice-wrapper,
@@ -2686,16 +2675,6 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1024px) {
-    .policy-contact-info {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 10px;
-        flex-direction: column;
-    }
-    .policy-col {
-        width: 100%;
-    }
     .blog-content-wrap .blog-post {
         gap: 20px;
     }
@@ -3294,15 +3273,13 @@ textarea:focus {
         margin-top: 20px !important;
     }
 
-    .recog-list-logo:first-child img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media only screen and (max-width: 767px) {
     .recog-list-logo img {
         width: 50px;
+        height: 100%;
+    }
+
+    .recog-list-logo:first-child img {
+        width: 100%;
         height: 100%;
     }
 }

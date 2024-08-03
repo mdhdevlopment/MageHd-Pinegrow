@@ -27,7 +27,7 @@
     </section>
     <section class="py-120 border-y border-#F2F2F2 relative"> 
         <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
-            <div class="flex flex-row sm:flex gap-10"> 
+            <div class="flex flex-row sm:flex gap-5"> 
                 <div class="sm:w-12/12 md:w-6/12"> 
                     <img class="company-logo-img" alt="" src="<?php echo PG_Image::getUrl( get_field( 'company_logo' ), 'large' ) ?>"/> 
                 </div>                 

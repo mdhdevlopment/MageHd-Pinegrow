@@ -806,6 +806,10 @@ select {
   gap: 0.5rem;
 }
 
+.gap-5 {
+  gap: 80px;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -998,12 +1002,16 @@ html {
   max-width: 1280px;
 }
 
-.xl-device{
+.xl-device {
   display: none;
 }
 
-.service-post-content .xxl-device img{
+.service-post-content .xxl-device img {
   width: 100%;
+}
+
+.our-mission-img {
+  border-radius: 10px;
 }
 
 .page-content h1,
@@ -1034,10 +1042,23 @@ html {
   margin-left: 20px;
 }
 
+.policy-contact-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.policy-col {
+  width: 33%;
+  display: flex;
+  gap: 10px;
+}
+
 .page-content li::marker {
   color: #3B65AF;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .page-content .wp-block-spacer {
@@ -1288,7 +1309,7 @@ p span {
 
 .subscribe-btn {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 52px;
   border-bottom: 1px solid #F2F2F2;
 }
@@ -1490,7 +1511,6 @@ footer {
   display: flex;
   vertical-align: middle;
   align-items: flex-end;
-  gap: 20px;
 }
 
 .home-video-section iframe,
@@ -1498,6 +1518,7 @@ footer {
   display: block;
   margin: 0 auto;
   width: 100%;
+  border-radius: 10px;
 }
 
 .webservice-info .border-btn {
@@ -1549,6 +1570,7 @@ footer {
 
 .project-cover-img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .web-deisgn:hover,
@@ -1573,6 +1595,24 @@ footer {
 .contact-us-before-footer {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.contact-location:before {
+  content: "\f041";
+  font-family: 'fontawesome';
+  margin-right: 8px;
+}
+
+.contact-no:before {
+  content: "\f095";
+  font-family: 'fontawesome';
+  margin-right: 8px;
+}
+
+.contact-email:before {
+  content: "\f0e0";
+  font-family: 'fontawesome';
+  margin-right: 8px;
 }
 
 .blog-section {
@@ -1665,7 +1705,6 @@ footer {
 .testimonial-list {
   border-radius: 10px;
   border: 3px solid #3B65AF;
-  background: #0E0E0E;
   padding: 40px 50px 80px;
 }
 
@@ -1730,7 +1769,7 @@ footer {
 
 .social-list img {
   width: 30px;
-  height: 30px;
+  height: 27px;
   padding: 5px;
   border: 1px solid #F2F2F2;
   border-radius: 50%;
@@ -1796,7 +1835,7 @@ textarea:focus {
   background: #000000 !important;
   padding: 15px 30px !important;
   margin-top: 100px !important;
-  color: #3B65AF;
+  color: #3B65AF !important;
   font-family: 'Questrial', sans-serif !important;
   font-size: 26px !important;
   font-style: normal;
@@ -1813,11 +1852,16 @@ textarea:focus {
 /* single post */
 
 .single-post-social-list img {
-  width: 30px;
-  height: 30px;
+  width: 30px !important;
+  height: 27px;
   padding: 5px;
   border: 1px solid #F2F2F2;
   border-radius: 50% !important;
+}
+
+.single-post p {
+  margin: 20px 0;
+  text-align: justify;
 }
 
 .blog-content img {
@@ -1826,6 +1870,17 @@ textarea:focus {
 }
 
 /* blog archive */
+
+.post-msg {
+  margin-top: 40px;
+}
+
+.blog-cover-img {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
 
 .project-main-wrap .project-title {
   color: #3B65AF;
@@ -1970,7 +2025,7 @@ textarea:focus {
 /* single case study */
 
 .casestudy-single-hero {
-  height: 600px;
+  height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -2520,7 +2575,7 @@ textarea:focus {
   padding-right: 40px;
 }
 
-#page-speed-form #spinner{
+#page-speed-form #spinner {
   color: #3B65AF;
   font-family: 'Questrial', sans-serif;
   font-size: 26px;
@@ -2530,15 +2585,42 @@ textarea:focus {
   display: none;
 }
 
+.company-logo-img {
+  border-radius: 10px;
+}
+
+.result-driven-img {
+  border-radius: 10px;
+}
+
+.affiliate-form-wrap input[type="checkbox"] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 0.25rem solid green;
+  border-radius: 0.5rem;
+}
+
+.affiliate-form-wrap input[type="checkbox"]::before {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  transform: scale(0);
+  background-color: green;
+}
+
+.affiliate-form-wrap input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
 @media only screen and (max-width: 1536px) {
-  .xl-device{
-    display: block;
-  }
-
-  .xxl-device{
-    display: none;
-  }
-
   .webservice-wrapper,
     .testimonial-wrapper {
     padding-left: 7%;
@@ -2554,12 +2636,29 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1440px) {
+  .casestudy-single-hero {
+    height: 600px;
+  }
+
+  .gap-5 {
+    gap: 40px;
+  }
+
+  .xl-device {
+    display: block;
+  }
+
+  .xxl-device {
+    display: none;
+  }
+
   .company-logo-img {
     position: absolute;
     left: 0;
     top: 0;
     width: 45%;
     margin-top: 120px;
+    border-radius: 0 10px 10px 0;
   }
 
   .contact-list {
@@ -2595,6 +2694,7 @@ textarea:focus {
     bottom: 0;
     width: 45%;
     margin-bottom: 120px;
+    border-radius: 0 10px 10px 0;
   }
 
   .result-driven-img {
@@ -2603,6 +2703,7 @@ textarea:focus {
     bottom: 0;
     width: 45%;
     margin-bottom: 120px;
+    border-radius: 10px 0 0 10px;
   }
 
   .benefit-img {
@@ -2621,7 +2722,19 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1024px) {
-  .blog-content-wrap .blog-post{
+  .policy-contact-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .policy-col {
+    width: 100%;
+  }
+
+  .blog-content-wrap .blog-post {
     gap: 20px;
   }
 
@@ -2775,8 +2888,18 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 991px) {
+  .blog-filter-btn {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 7px 15px;
+  }
+
   .footer-menu {
     width: 49%;
+  }
+
+  .uiux-process-block {
+    width: 46%;
   }
 
   .speed-content-section {
@@ -2938,7 +3061,12 @@ textarea:focus {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 0 40px;
+    padding: 0;
+    border-radius: 10px !important;
+  }
+
+  .case-study-service-warpper {
+    margin-top: 30px;
   }
 
   .our-mission-img,
@@ -2947,25 +3075,26 @@ textarea:focus {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 0;
-    padding: 0 40px;
+    padding: 0;
+    border-radius: 10px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .service-post-content img {
-    margin: 0 auto;
+  .company-logo-img {
+    height: 320px;
   }
 
   .speed-content-section {
     margin-top: 40px;
   }
 
-  .blog-content-wrap .blog-post{
+  .blog-content-wrap .blog-post {
     gap: 15px;
   }
 
   .subscribe-form input,
-    .speed-test-form-warpper input{
+    .speed-test-form-warpper input {
     font-size: 20px;
   }
 
@@ -3198,20 +3327,21 @@ textarea:focus {
     margin-top: 20px;
     position: unset;
     width: 100%;
-    padding: 0 40px;
   }
 
   .featured-list {
     margin-top: 20px !important;
   }
 
-  .recog-list-logo img {
-    width: 50px;
-    height: 100%;
-  }
-
   .recog-list-logo:first-child img {
     width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .recog-list-logo img {
+    width: 50px;
     height: 100%;
   }
 }

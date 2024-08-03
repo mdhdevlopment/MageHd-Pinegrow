@@ -22,9 +22,9 @@
 <section class="project py-120 border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <div class="blog-category"> 
-            <!-- <button class="border-btn blog-filter-btn active" id="all">
-                        All
-                    </button> -->                 
+            <button class="border-btn blog-filter-btn active" id="all">
+                <?php _e( 'All', 'mage_hd_theme' ); ?>
+            </button>                 
             <button class="border-btn blog-filter-btn" id="category-web-design"> 
                 <?php _e( 'Web Design', 'mage_hd_theme' ); ?> 
             </button>                 
@@ -52,10 +52,9 @@
             <?php while ( $post_query->have_posts() ) : $post_query->the_post(); ?>
                 <?php PG_Helper_v2::rememberShownPost(); ?>
                 <div id="post-<?php the_ID(); ?>" <?php post_class( 'project-main-wrap blog-detail flex flex-wrap justify-between gap-5' ); ?>> 
-                    <div class="md:w-6/12"> 
-                        <?php echo PG_Image::getPostImage( null, 'large', array(
-                                'class' => 'project-cover-img'
-                        ), 'both', null ) ?> 
+                    <?php $image_attributes = !empty( get_the_ID() ) ? wp_get_attachment_image_src( PG_Image::isPostImage() ? get_the_ID() : get_post_thumbnail_id( get_the_ID() ), 'full' ) : null; ?>
+                    <div class="md:w-6/12 blog-cover-img" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"> 
+                        <!-- <img class="project-cover-img" alt="Website Project" src="./assets/images/koilsimg@2x.png" cms-post-image/>  -->
                     </div>                         
                     <div class="md:w-6/12"> 
                         <h4 class="project-title"><?php the_title(); ?></h4> 
@@ -67,6 +66,7 @@
         <?php else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.', 'mage_hd_theme' ); ?></p>
         <?php endif; ?> 
+        <div class="post-msg"></div>             
     </div>         
 </section>     
 <section class="recog-section py-120 relative"> 

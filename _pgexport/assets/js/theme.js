@@ -117,20 +117,28 @@ $( document ).ready(function() {
 
 
 // Blog filter btn
-$( document ).ready(function() {
+$(document).ready(function() {
     $('.blog-category .blog-filter-btn:first-child').addClass('active');
-    $('.project-main-wrap').hide();
-    $('.project-main-wrap.category-web-design').show();
-    $('.blog-category .blog-filter-btn').click(function(){
+    $('.post-msg').hide();
+    $('.blog-category .blog-filter-btn').click(function() {
         $('.blog-category .blog-filter-btn').removeClass('active');
         $(this).addClass('active');
-
         var getId = $('.blog-category .blog-filter-btn.active').attr('id');
         $('.project-main-wrap').hide();
-        $('.project-main-wrap.'+getId).show();
-
+        $('.post-msg').empty();
+        if ($('.project-main-wrap.' + getId).length > 0) {
+            $('.project-main-wrap.' + getId).show();   
+        } else {
+            $('.post-msg').show();
+            $('.post-msg').html('<p class="medium-content-text text-center">No post found</p>');
+        }
+    });
+    $('.blog-category .blog-filter-btn#all').click(function() {
+        $('.project-main-wrap').show();
+        $('.post-msg').empty();
     });
 });
+
 
 // FAQ filter btn
 

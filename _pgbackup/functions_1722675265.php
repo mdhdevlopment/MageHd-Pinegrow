@@ -380,6 +380,10 @@ function custom_excerpt_length($excerpt="", $limit=250) {
     return $excerpt;
 }
 
-apply_filters('fluentform/disable_inputmode', false)
+
+// disable autofill of fluent form
+add_filter('fluentform/disable_inputmode', function () {
+    return $true;
+});
 
 ?>

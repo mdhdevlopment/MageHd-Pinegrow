@@ -380,6 +380,5 @@ function custom_excerpt_length($excerpt="", $limit=250) {
     return $excerpt;
 }
 
-apply_filters('fluentform/disable_inputmode', false)
 
 ?>

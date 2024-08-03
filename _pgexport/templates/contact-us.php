@@ -21,7 +21,7 @@
 </section>     
 <section class="your-project py-120 border-y border-#F2F2F2 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
-        <div class="flex flex-row sm:flex gap-10"> 
+        <div class="flex flex-row sm:flex gap-5"> 
             <div class="sm:w-12/12 md:w-6/12"> 
                 <h3 class="large-inner-heading pb-5"> <?php _e( 'LEt’s work on your project', 'mage_hd_theme' ); ?></h3> 
                 <?php echo get_field( 'choose_form' ); ?> 

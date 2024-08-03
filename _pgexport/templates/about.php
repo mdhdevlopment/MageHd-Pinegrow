@@ -21,7 +21,7 @@
 </section>     
 <section class="result-driven py-120 relative"> 
     <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
-        <div class="flex flex-row sm:flex result-driven-row"> 
+        <div class="flex flex-row sm:flex result-driven-row gap-5"> 
             <div class="sm:w-12/12 md:w-6/12"> 
                 <h3 class="large-inner-heading pb-5"><?php echo get_field( 'result_driven_service_title' ); ?></h3> 
                 <div class="large-content-text">
