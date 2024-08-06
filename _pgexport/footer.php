@@ -3,7 +3,7 @@
         <footer>
             <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
                 <div class="footer-news-letters py-120">
-                    <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Subscribe to our newsletter', 'mage_hd_theme' ); ?></h3>
+                    <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Subscribe to our newsletter', 'mage_hd_theme' ); ?></h2>
                     <?php $mailer = new PG_Simple_Form_Mailer(); ?>
                     <?php $mailer->process( array(
                             'form_id' => 'subscribe-form_mailer_id',
@@ -85,6 +85,8 @@
                         <div class="footer-menu pb-60">
                             <h4 class="footer-title"><?php _e( 'Contact US', 'mage_hd_theme' ); ?></h4>
                             <div class="footer-contact-info">
+                                <div class="footer-nav"> <a href="/contact-us/"><?php _e( 'Contact Form', 'mage_hd_theme' ); ?></a>
+                                </div>                                 
                                 <div class="footer-contact-location footer-nav">
                                     <?php echo get_theme_mod( 'contact_info_location', __( '610 E Zack St. Ste 110-2177Tampa, FL 33602', 'mage_hd_theme' ) ); ?>
                                 </div>                                 

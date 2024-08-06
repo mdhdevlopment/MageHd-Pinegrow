@@ -24,27 +24,40 @@ $( document ).ready(function() {
     });
 });
 // CHECK OUT OR RECENT WEBSITE PROJECTS Tab
-$( document ).ready(function() {
-    $('#all').click(function(){
-        $('.web-deisgn').removeClass('active');
-        $(this).addClass('active');
-        $('.project-detail.category-web-development').show();
-        $('.project-detail.category-digital-marketing').show();
-    });
+$(document).ready(function() {
+       $('.project .blog-category .web-deisgn:first-child').addClass('active');
+        $('.project .blog-category .web-deisgn').click(function(){
+            $('.project .blog-category .web-deisgn').removeClass('active');
+            $(this).addClass('active');
+            var getId = $('.project .blog-category .web-deisgn.active').attr('id');
+            
+            $('.project-detail').hide();
+            $('.project-detail.'+getId).show();
+    
+        });
+        $('.project .blog-category .web-deisgn.active#all').click(function(){
+            $('.project-detail').show();
+        });
+    // $('#all').click(function(){
+    //     $('.web-deisgn').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('.project-detail.category-web-development').show();
+    //     $('.project-detail.category-digital-marketing').show();
+    // });
 
-    $('#category-digital-marketing').click(function(){
-        $('.web-deisgn').removeClass('active');
-        $(this).addClass('active');
-        $('.project-detail.category-web-development').hide();
-        $('.project-detail.category-digital-marketing').show();
-    });
+    // $('#category-digital-marketing').click(function(){
+    //     $('.web-deisgn').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('.project-detail.category-web-development').hide();
+    //     $('.project-detail.category-digital-marketing').show();
+    // });
 
-    $('#category-web-development').click(function(){
-        $('.web-deisgn').removeClass('active');
-        $(this).addClass('active');
-        $('.project-detail.category-web-development').show();
-        $('.project-detail.category-digital-marketing').hide();
-    });
+    // $('#category-web-development').click(function(){
+    //     $('.web-deisgn').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('.project-detail.category-web-development').show();
+    //     $('.project-detail.category-digital-marketing').hide();
+    // });
 });
 
 // FAQs Home page

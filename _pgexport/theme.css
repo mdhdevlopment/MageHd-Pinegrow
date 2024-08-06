@@ -929,8 +929,7 @@ select {
 }
 
 body {
-    --tw-bg-opacity: 1;
-    background-color: rgb(5 5 5 / var(--tw-bg-opacity));
+    background-color: #0E0E0E;
 }
 
 body,
@@ -1039,17 +1038,20 @@ html {
     list-style: disc;
     margin-left: 20px;
 }
+
 .policy-contact-info {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
 }
+
 .policy-col {
     width: 33%;
     display: flex;
     gap: 10px;
 }
+
 .page-content li::marker {
     color: #3B65AF;
     font-size: 30px;
@@ -1128,7 +1130,7 @@ html {
 }
 
 #check:checked ~ .menu {
-    right: 0;
+    left: 0;
 }
 
 .open-menu ,
@@ -1403,6 +1405,10 @@ footer {
     list-style: disc;
 }
 
+.privacy-terms-menu li:first-child {
+    list-style: none;
+}
+
 .home-banner {
     background: url(assets/images/banner-img.png);
     background-repeat: no-repeat;
@@ -1590,16 +1596,19 @@ footer {
     padding-top: 150px;
     padding-bottom: 150px;
 }
+
 .contact-location:before {
     content: "\f041";
     font-family: 'fontawesome';
     margin-right: 8px;
 }
+
 .contact-no:before {
     content: "\f095";
     font-family: 'fontawesome';
     margin-right: 8px;
 }
+
 .contact-email:before {
     content: "\f0e0";
     font-family: 'fontawesome';
@@ -1613,6 +1622,10 @@ footer {
 
 .blog-section h3 {
     margin-bottom: 120px;
+}
+
+.blog-content-wrap {
+    margin-top: 120px;
 }
 
 .blog-content-wrap .blog-post {
@@ -2686,6 +2699,9 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1024px) {
+    .blog-content-wrap {
+        margin-top: 80px;
+    }
     .policy-contact-info {
         display: flex;
         align-items: flex-start;
@@ -2693,9 +2709,11 @@ textarea:focus {
         gap: 10px;
         flex-direction: column;
     }
+
     .policy-col {
         width: 100%;
     }
+
     .blog-content-wrap .blog-post {
         gap: 20px;
     }
@@ -2849,12 +2867,25 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 991px) {
+    .social-list img {
+        width: 29px;
+        height: 27px;
+    }
+    .digital-img {
+        margin-top: 40px !important;
+    }
+    .digitalservices-inner-row {
+        margin-top: 40px;
+    }
     .blog-filter-btn {
         font-size: 16px;
         line-height: 26px;
         padding: 7px 15px;
     }
-
+    .result-driven .large-inner-heading,
+    .result-driven .large-content-text{
+        text-align: center;
+    }
     .footer-menu {
         width: 49%;
     }
@@ -3078,7 +3109,7 @@ textarea:focus {
     .footer-nav,
     .footer-nav a {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 28px;
     }
 
     .footer-social-list.social-list {
@@ -3297,6 +3328,13 @@ textarea:focus {
     .recog-list-logo:first-child img {
         width: 100%;
         height: 100%;
+    }
+    .digital-img {
+        margin: 40px 20px 0;
+        width: 92%;
+    }
+    .blog-content-wrap {
+        margin-top: 40px;
     }
 }
 

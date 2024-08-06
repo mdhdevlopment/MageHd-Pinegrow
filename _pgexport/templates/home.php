@@ -13,7 +13,8 @@
                 <h1 class="hero-title"><?php echo get_field( 'banner_title' ); ?></h1> 
                 <div class="hero-content mb-5">
                     <?php echo get_field( 'banner_content' ); ?>
-                </div><a href="<?php echo esc_url( get_field( 'banner_button_link' ) ); ?>" class="blue-btn"> <span><?php echo get_field( 'banner_button_text' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
+                </div>
+                <a href="<?php echo esc_url( get_field( 'banner_button_link' ) ); ?>" class="blue-btn"> <span><?php echo get_field( 'banner_button_text' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
             </div>                 
         </div>             
     </div>         
@@ -26,7 +27,7 @@
 </section>     
 <section class="featured py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container featured-container"> 
-        <h3 class="large-inner-heading text-center"><?php _e( 'We Featured IN', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center"><?php _e( 'We Featured IN', 'mage_hd_theme' ); ?></h2> 
         <div class="featured-list"> 
             <?php
                 $industry_partners_query_args = array(
@@ -56,10 +57,10 @@
     </div>         
 </section>     
 <section class="result-driven py-120 relative"> 
-    <div class="max-w-[90vw] mx-auto py-8 w-full lg:container"> 
+    <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <div class="flex flex-row sm:flex result-driven-row gap-5"> 
             <div class="sm:w-12/12 md:w-6/12"> 
-                <h3 class="large-inner-heading pb-5"><?php echo get_field( 'result_driven_service_title' ); ?></h3> 
+                <h2 class="large-inner-heading pb-5"><?php echo get_field( 'result_driven_service_title' ); ?></h2> 
                 <div class="large-content-text">
                     <?php echo get_field( 'result_driven_service_content' ); ?>
                 </div>                     
@@ -73,7 +74,7 @@
 </section>     
 <section class="digitalservices py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Digital Marketing Services', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Digital Marketing Services', 'mage_hd_theme' ); ?></h2> 
         <div class="large-content-text text-center">
             <?php echo category_description( '217,1' ); ?>
         </div>             
@@ -108,15 +109,15 @@
                     <?php endif; ?> 
                 </div>                     
             </div>                 
-        </div>             
-        <div class="sm:w-12/12 md:w-6/12"> 
-            <img class="digital-img" alt="digital-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/digital-img.svg"/> 
+            <div class="sm:w-12/12 md:w-6/12"> 
+                <img class="digital-img" alt="digital-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/digital-img.svg"/> 
+            </div>                 
         </div>             
     </div>         
 </section>     
 <section class="recog-section py-120 relative"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?> </h3> 
+        <h2 class="large-inner-heading text-center"> <?php _e( 'Our recognitions', 'mage_hd_theme' ); ?> </h2> 
         <div class="recog-list"> 
             <div class="recog-list-logo flex justify-center gap-5"> 
                 <img alt="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BBB-logo.svg"/> 
@@ -134,7 +135,7 @@
 </section>     
 <section class="why-us-section py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center pb-60"><?php echo get_field( 'why_magehd_title' ); ?></h3> 
+        <h2 class="large-inner-heading text-center pb-60"><?php echo get_field( 'why_magehd_title' ); ?></h2> 
         <div class="large-content-text text-center">
             <?php echo get_field( 'why_magehd_content' ); ?>
         </div>             
@@ -143,7 +144,7 @@
 </section>     
 <section class="web-design py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Web Design & Development Services', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Web Design & Development Services', 'mage_hd_theme' ); ?></h2> 
         <div class="large-content-text text-center">
             <?php echo category_description( '218,6' ); ?>
         </div>             
@@ -180,16 +181,16 @@
 </section>     
 <section class="project py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center"><?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center"><?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?></h2> 
         <div class="blog-category py-120"> 
             <button class="border-btn web-deisgn active" id="all"> 
                 <?php _e( 'All', 'mage_hd_theme' ); ?>
             </button>                 
-            <button class="border-btn web-deisgn" id="category-digital-marketing"> 
-                <?php _e( 'Digital Marketing', 'mage_hd_theme' ); ?> 
-            </button>                 
             <button class="border-btn web-deisgn" id="category-web-development"> 
                 <?php _e( 'Web Development', 'mage_hd_theme' ); ?>
+            </button>                 
+            <button class="border-btn web-deisgn" id="category-mobile-app-project"> 
+                <?php _e( 'Mobile App Project', 'mage_hd_theme' ); ?> 
             </button>                 
         </div>             
         <div class="project-main-wrapper flex flex-wrap justify-between gap-5"> 
@@ -210,7 +211,8 @@
                         <?php echo PG_Image::getPostImage( null, 'large', array(
                                 'class' => 'project-cover-img'
                         ), 'both', null ) ?> 
-                        <h4 class="project-title"><?php the_title(); ?></h4><a href="<?php echo esc_url( get_permalink() ); ?>" class="explore-more"> <span><?php _e( 'Explore', 'mage_hd_theme' ); ?></span> </a> 
+                        <h4 class="project-title"><?php the_title(); ?></h4>
+                        <a href="<?php echo esc_url( get_permalink() ); ?>" class="explore-more"> <span><?php _e( 'Explore', 'mage_hd_theme' ); ?></span> </a> 
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
@@ -224,14 +226,16 @@
 </section>     
 <section class="page-speed-section py-120 border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Check out your Website speed', 'mage_hd_theme' ); ?></h3>
+        <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Check out your Website speed', 'mage_hd_theme' ); ?></h2>
         <form id="page-speed-form">
             <div class="speed-test-form-warpper">
                 <input type="text" id="urlInput" placeholder="Enter Website URL" required>
-                <button type="submit" class="subscribe-btn"><i class="fa fa-long-arrow-right"></i>
+                <button type="submit" class="subscribe-btn">
+                    <i class="fa fa-long-arrow-right"></i>
                 </button>
             </div>
-            <div id="spinner"><i class="fa fa-spinner fa-spin"></i> 
+            <div id="spinner">
+                <i class="fa fa-spinner fa-spin"></i> 
                 <?php _e( 'Please Wait...', 'mage_hd_theme' ); ?>
             </div>
         </form>
@@ -239,7 +243,7 @@
 </section>     
 <section class="client-testimonial-section py-120 relative border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h2> 
         <div class="large-content-text text-center"> 
             <?php _e( 'Our clients love our services because they appreciate the quality of work that we deliver and the attentive customer service that they receive. They also enjoy the convenience of our fast turnaround times, which helps them meet their deadlines.', 'mage_hd_theme' ); ?>
         </div>             
@@ -271,7 +275,8 @@
                             <?php the_content(); ?>
                         </div>                             
                         <div class="testimonial-info"> 
-                            <h4 class="testimonial-name"><?php the_title(); ?></h4><a href="#" class="testimonial-web-link large-content-text"><?php echo get_field( 'website_url' ); ?></a> 
+                            <h4 class="testimonial-name"><?php the_title(); ?></h4>
+                            <a href="#" class="testimonial-web-link large-content-text"><?php echo get_field( 'website_url' ); ?></a> 
                         </div>                             
                     </div>                         
                 </div>
@@ -287,13 +292,14 @@
 <section class="contact-us-before-footer py-120 border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <div class="contact-us-before-footer-col contact-us-before-footer-col flex flex-wrap justify-center"> 
-            <h3 class="large-inner-heading text-center">  <?php _e( 'let’s create remarkable experience for your business', 'mage_hd_theme' ); ?> </h3><a href="/contact-us/" class="bg-blue-btn view-all-btn"> <span><?php _e( 'Contact us', 'mage_hd_theme' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
+            <h2 class="large-inner-heading text-center">  <?php _e( 'let’s create remarkable experience for your business', 'mage_hd_theme' ); ?> </h2>
+            <a href="/contact-us/" class="bg-blue-btn view-all-btn"> <span><?php _e( 'Contact us', 'mage_hd_theme' ); ?></span> <i class="fa-solid fa-arrow-right"></i> </a> 
         </div>             
     </div>         
 </section>     
 <section class="blog-section py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center"><?php _e( 'Recent Blog Posts', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center"><?php _e( 'Recent Blog Posts', 'mage_hd_theme' ); ?></h2> 
         <div class="blog-content-wrap flex flex-wrap justify-between gap-5"> 
             <?php
                 $post_query_args = array(
@@ -325,7 +331,7 @@
 </section>     
 <section class="home-faqs py-120"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
-        <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Frequently Asked Questions', 'mage_hd_theme' ); ?></h3> 
+        <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Frequently Asked Questions', 'mage_hd_theme' ); ?></h2> 
         <div class="large-content-text text-center"> 
             <?php _e( 'Lorem ipsum is simply dummy text of the printing and typesetting', 'mage_hd_theme' ); ?>
             <?php _e( 'industry.', 'mage_hd_theme' ); ?> 
