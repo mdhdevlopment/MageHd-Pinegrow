@@ -1,4 +1,238 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Questrial&display=swap');
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-Bold.eot');
+    src: url('assets/fonts/campton/Campton-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-Bold.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-Bold.woff') format('woff'),
+        url('assets/fonts/campton/Campton-Bold.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-Bold.svg#Campton-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-BlackItalic.eot');
+    src: url('assets/fonts/campton/Campton-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-BlackItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-BlackItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-BlackItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-BlackItalic.svg#Campton-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-Black.eot');
+    src: url('assets/fonts/campton/Campton-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-Black.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-Black.woff') format('woff'),
+        url('assets/fonts/campton/Campton-Black.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-Black.svg#Campton-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-BoldItalic.eot');
+    src: url('assets/fonts/campton/Campton-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-BoldItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-BoldItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-BoldItalic.svg#Campton-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton Book';
+    src: url('assets/fonts/campton/Campton-Book.eot');
+    src: url('assets/fonts/campton/Campton-Book.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-Book.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-Book.woff') format('woff'),
+        url('assets/fonts/campton/Campton-Book.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-Book.svg#Campton-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-BookItalic.eot');
+    src: url('assets/fonts/campton/Campton-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-BookItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-BookItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-BookItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-BookItalic.svg#Campton-BookItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-ExtraBoldItalic.eot');
+    src: url('assets/fonts/campton/Campton-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-ExtraBoldItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-ExtraBoldItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-ExtraBoldItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-ExtraBoldItalic.svg#Campton-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-ExtraBold.eot');
+    src: url('assets/fonts/campton/Campton-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-ExtraBold.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-ExtraBold.woff') format('woff'),
+        url('assets/fonts/campton/Campton-ExtraBold.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-ExtraBold.svg#Campton-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-ExtraLight.eot');
+    src: url('assets/fonts/campton/Campton-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-ExtraLight.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-ExtraLight.woff') format('woff'),
+        url('assets/fonts/campton/Campton-ExtraLight.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-ExtraLight.svg#Campton-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-ExtraLightItalic.eot');
+    src: url('assets/fonts/campton/Campton-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-ExtraLightItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-ExtraLightItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-ExtraLightItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-ExtraLightItalic.svg#Campton-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-Medium.eot');
+    src: url('assets/fonts/campton/Campton-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-Medium.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-Medium.woff') format('woff'),
+        url('assets/fonts/campton/Campton-Medium.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-Medium.svg#Campton-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-LightItalic.eot');
+    src: url('assets/fonts/campton/Campton-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-LightItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-LightItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-LightItalic.svg#Campton-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-Light.eot');
+    src: url('assets/fonts/campton/Campton-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-Light.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-Light.woff') format('woff'),
+        url('assets/fonts/campton/Campton-Light.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-Light.svg#Campton-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-MediumItalic.eot');
+    src: url('assets/fonts/campton/Campton-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-MediumItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-MediumItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-MediumItalic.svg#Campton-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-SemiBold.eot');
+    src: url('assets/fonts/campton/Campton-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-SemiBold.woff') format('woff'),
+        url('assets/fonts/campton/Campton-SemiBold.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-SemiBold.svg#Campton-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-SemiBoldItalic.eot');
+    src: url('assets/fonts/campton/Campton-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-SemiBoldItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-SemiBoldItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-SemiBoldItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-SemiBoldItalic.svg#Campton-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-Thin.eot');
+    src: url('assets/fonts/campton/Campton-Thin.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-Thin.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-Thin.woff') format('woff'),
+        url('assets/fonts/campton/Campton-Thin.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-Thin.svg#Campton-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('assets/fonts/campton/Campton-ThinItalic.eot');
+    src: url('assets/fonts/campton/Campton-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/campton/Campton-ThinItalic.woff2') format('woff2'),
+        url('assets/fonts/campton/Campton-ThinItalic.woff') format('woff'),
+        url('assets/fonts/campton/Campton-ThinItalic.ttf') format('truetype'),
+        url('assets/fonts/campton/Campton-ThinItalic.svg#Campton-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 /* 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -878,7 +1112,7 @@ select {
 }
 
 .font-serif {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
 }
 
 .text-6xl {
@@ -1162,7 +1396,7 @@ html {
 }
 
 .hero-content {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 26px;
     font-weight: 500;
     padding-top: 40px;
@@ -1172,7 +1406,7 @@ html {
 }
 
 .blue-btn {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     color: #F2F2F2;
     font-size: 26px;
     line-height: 36px;
@@ -1194,12 +1428,14 @@ html {
 .blue-btn i {
     margin-left: 20px;
 }
-
+.autohide-element {
+    display: none !important;
+}
 .border-btn {
     border-radius: 50px;
     padding: 10px 26px;
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -1225,7 +1461,7 @@ html {
     border-radius: 50px;
     padding: 20px 30px;
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -1253,7 +1489,7 @@ html {
 p,
 li {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -1278,7 +1514,7 @@ p span {
 
 .medium-content-text {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -1289,7 +1525,7 @@ p span {
 .subscribe-form input,
 .test-diagnosis input {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -1330,7 +1566,7 @@ p span {
 .footer-nav,
 .footer-nav a {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -1381,7 +1617,7 @@ footer {
 
 .footer-copyright-info {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -1390,7 +1626,7 @@ footer {
 
 .privacy-terms-menu a {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -1550,7 +1786,7 @@ footer {
 
 .project-detail .explore-more {
     color: #fff;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -1652,7 +1888,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
 }
 
 .read-more:hover {
@@ -1802,7 +2038,7 @@ textarea:focus {
     border-bottom: 1px solid #F2F2F2 !important;
     border-radius: 0 !important;
     color: #F2F2F2 !important;
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Campton', sans-serif !important;
     font-size: 26px !important;
     font-style: normal;
     font-weight: 500;
@@ -1834,7 +2070,7 @@ textarea:focus {
     padding: 15px 30px !important;
     margin-top: 100px !important;
     color: #3B65AF !important;
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Campton', sans-serif !important;
     font-size: 26px !important;
     font-style: normal;
     font-weight: 500 !important;
@@ -2082,7 +2318,7 @@ textarea:focus {
     border-bottom: 1px solid #F2F2F2 !important;
     border-radius: 0 !important;
     color: #F2F2F2 !important;
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Campton', sans-serif !important;
     font-size: 26px !important;
     font-style: normal;
     font-weight: 500;
@@ -2093,7 +2329,7 @@ textarea:focus {
 .affiliate-account label span {
     color: #F2F2F2;
     text-align: center;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -2113,7 +2349,7 @@ textarea:focus {
     background: #00000000 !important;
     color: #3B65AF !important;
     text-align: center !important;
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Campton', sans-serif !important;
     font-size: 26px !important;
     font-style: normal !important;
     font-weight: 500 !important;
@@ -2180,7 +2416,7 @@ textarea:focus {
     display: block !important;
     margin: 80px auto 0;
     color: #3B65AF !important;
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Campton', sans-serif !important;
     font-size: 26px !important;
     font-style: normal;
     font-weight: 500 !important;
@@ -2249,7 +2485,7 @@ textarea:focus {
 }
 
 .speed-test-form-warpper input {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     color: #F2F2F2;
     font-size: 26px;
     line-height: 36px;
@@ -2323,7 +2559,7 @@ textarea:focus {
     color: #F2F2F2;
     font-size: 18px;
     line-height: 28px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-weight: 500;
 }
 
@@ -2331,7 +2567,7 @@ textarea:focus {
     color: #F2F2F2;
     font-size: 20px;
     line-height: 30px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-weight: 500;
     text-align: center;
 }
@@ -2421,7 +2657,7 @@ textarea:focus {
     color: #FFFFFF;
     font-size: 18px;
     line-height: 28px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-weight: 500;
     text-align: center;
 }
@@ -2492,7 +2728,7 @@ textarea:focus {
 
 .metric-info a {
     color: #fff;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
@@ -2527,7 +2763,7 @@ textarea:focus {
 
 .get-help-issue p {
     color: #F2F2F2;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-weight: 500;
     font-size: 26px;
     line-height: 36px;
@@ -2557,7 +2793,7 @@ textarea:focus {
 
 #page-speed-form #spinner {
     color: #3B65AF;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Campton', sans-serif;
     font-size: 26px;
     line-height: 36px;
     text-align: center;
@@ -2953,8 +3189,8 @@ textarea:focus {
 
     .affiliate-form-wrap,
     .utm-url-form-wrap {
-        padding: 20px;
-        margin-top: 40px;
+        padding: 40px;
+        margin-top: 60px;
     }
 
     .become-affiliate-row {
