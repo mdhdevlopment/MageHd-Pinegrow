@@ -299,9 +299,6 @@ if ( ! function_exists( 'mage_hd_theme_enqueue_scripts' ) ) :
     wp_deregister_script( 'mage_hd_theme-chart' );
     wp_enqueue_script( 'mage_hd_theme-chart', 'https://cdn.jsdelivr.net/npm/chart.js', [], '1.0.0', false);
 
-    wp_deregister_script( 'mage_hd_theme-pagespeed' );
-    wp_enqueue_script( 'mage_hd_theme-pagespeed', get_template_directory_uri() . '/assets/js/pagespeed.js', [], '1.0.0', false);
-
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', [], '1.0.0', false);
 

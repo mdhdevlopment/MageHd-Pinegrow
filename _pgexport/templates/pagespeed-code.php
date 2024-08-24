@@ -12,7 +12,7 @@
             <div class="w-11/12"> 
                 <h1 class="hero-title"> <?php _e( 'Page Speed Test', 'mage_hd_theme' ); ?> </h1> 
                 <div class="hero-content mb-5"> 
-                    <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'mage_hd_theme' ); ?> 
+                    <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'mage_hd_theme' ); ?>
                 </div>                     
             </div>                 
         </div>             
@@ -23,26 +23,24 @@
     <div class="max-w-[90vw] mx-auto  w-full lg:container"> 
         <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Page speed test diagnosis', 'mage_hd_theme' ); ?></h3> 
         <div class="medium-content-text text-center"> 
-            <?php _e( 'Est minima odit et cupiditate laborum qui sint dolor! Et aspernatur architecto ut libero vitae qui saepe possimus eum itaque voluptates ea.', 'mage_hd_theme' ); ?> 
+            <?php _e( 'Est minima odit et cupiditate laborum qui sint dolor! Et aspernatur architecto ut libero vitae qui saepe possimus eum itaque voluptates ea.', 'mage_hd_theme' ); ?>
         </div>             
-        <div class="speed-content-section"> 
+        <!-- <div class="speed-content-section"> 
             <div class="speed-view-btn-warpper"> 
-                <div class="speed-view-btn active" id="desktopView">
-                    <?php _e( 'Desktop', 'mage_hd_theme' ); ?>
-                </div>                     
-                <div class="speed-view-btn" id="mobileView">
-                    <?php _e( 'Mobile', 'mage_hd_theme' ); ?>
-                </div>                     
+                <div class="speed-view-btn active" id="desktopView">Desktop</div>                     
+                <div class="speed-view-btn" id="mobileView">Mobile</div>                     
             </div>                 
             <div class="desktop-content speed-content" id="desktopView"> 
-                <h2><?php _e( 'Desktop Results', 'mage_hd_theme' ); ?></h2> 
+                <h2>Desktop Results</h2> 
                 <div id="desktopResult"></div>                     
             </div>                 
             <div class="mobile-content speed-content" id="mobileView"> 
-                <h2><?php _e( 'Mobile Results', 'mage_hd_theme' ); ?></h2> 
+                <h2>Mobile Results</h2> 
                 <div id="mobileResult"></div>                     
             </div>                 
-        </div>             
+        </div>              -->
+        <div class="chart-display-result"></div>
+        <?php echo get_field( 'display_result' ); ?> 
     </div>         
 </section>     
 <section class="recog-section py-120 relative"> 
@@ -77,13 +75,13 @@
         <h3 class="large-inner-heading text-center"><?php _e( 'Check out or recent website projects', 'mage_hd_theme' ); ?></h3> 
         <div class="blog-category py-120"> 
             <button class="border-btn web-deisgn active" id="all"> 
-                <?php _e( 'All', 'mage_hd_theme' ); ?> 
+                <?php _e( 'All', 'mage_hd_theme' ); ?>
             </button>                 
             <button class="border-btn web-deisgn" id="category-digital-marketing"> 
                 <?php _e( 'Digital Marketing', 'mage_hd_theme' ); ?> 
             </button>                 
             <button class="border-btn web-deisgn" id="category-web-development"> 
-                <?php _e( 'Web Development', 'mage_hd_theme' ); ?> 
+                <?php _e( 'Web Development', 'mage_hd_theme' ); ?>
             </button>                 
         </div>             
         <div class="project-main-wrapper flex flex-wrap justify-between gap-5"> 
@@ -120,7 +118,7 @@
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h3 class="large-inner-heading text-center pb-60"><?php _e( 'Client’s Testimonials', 'mage_hd_theme' ); ?></h3> 
         <div class="large-content-text text-center"> 
-            <?php _e( 'Our clients love our services because they appreciate the quality of work that we deliver and the attentive customer service that they receive. They also enjoy the convenience of our fast turnaround times, which helps them meet their deadlines.', 'mage_hd_theme' ); ?> 
+            <?php _e( 'Our clients love our services because they appreciate the quality of work that we deliver and the attentive customer service that they receive. They also enjoy the convenience of our fast turnaround times, which helps them meet their deadlines.', 'mage_hd_theme' ); ?>
         </div>             
     </div>         
     <div class="testimonial-wrapper owl-carousel"> 

@@ -227,18 +227,16 @@
 <section class="page-speed-section py-120 border-y border-#F2F2F2"> 
     <div class="max-w-[90vw] mx-auto w-full lg:container"> 
         <h2 class="large-inner-heading text-center pb-60"><?php _e( 'Check out your Website speed', 'mage_hd_theme' ); ?></h2>
-        <form id="page-speed-form">
+        <?php echo get_field( 'display_form' ); ?> 
+        <!-- <form id="page-speed-form">
             <div class="speed-test-form-warpper">
                 <input type="text" id="urlInput" placeholder="Enter Website URL" required>
-                <button type="submit" class="subscribe-btn">
-                    <i class="fa fa-long-arrow-right"></i>
+                <button type="submit" class="subscribe-btn"><i class="fa fa-long-arrow-right"></i>
                 </button>
             </div>
-            <div id="spinner">
-                <i class="fa fa-spinner fa-spin"></i> 
-                <?php _e( 'Please Wait...', 'mage_hd_theme' ); ?>
+            <div id="spinner"><i class="fa fa-spinner fa-spin"></i> Please Wait...
             </div>
-        </form>
+        </form> -->
     </div>
 </section>     
 <section class="client-testimonial-section py-120 relative border-y border-#F2F2F2"> 
